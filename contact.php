@@ -6,11 +6,29 @@ $nome = $_POST['name'];
 $email = $_POST['email'];
 $mensagem = $_POST['message'];
 
-// Enviando um email (exemplo usando PHPMailer)
+// Carregar o PHPMailer
 require 'PHPMailer/PHPMailerAutoload.php';
 
 $mail = new PHPMailer;
-$mail->isSMTP();
-// ... configurar as demais opções do PHPMailer ...
-$mail->send();
+$mail->isSMTP();                        // Usar SMTP
+$mail->Host = 'smtp.gmail.com';         // Servidor SMTP do Gmail
+$mail->SMTPAuth = true;                 // Habilitar autenticação SMTP
+$mail->Username = 'marceloviana836@gmail.com'; // Seu e-mail do Gmail
+$mail->Password = 'uneizglzlcrnkpht';   // Sua senha de app do Gmail
+$mail->SMTPSecure = 'tls';              // Usar TLS (pode ser SSL para a porta 465)
+$mail->Port = 587;                      // Porta para TLS (587)
+
+// Configurações do e-mail
+$mail->setFrom('marceloviana836@gmail.com', 'Marcelo Viana'); // Remetente
+$mail->addAddress($email, $nome);        // Destinatário
+$mail->isHTML(true);                     // Enviar como HTML
+$mail->Subject = 'Contato Portifolio';   // Assunto
+$mail->Body    = 'Olá ' . $nome . ',<br><br>' . $mensagem;  // Corpo do email (HTML)
+
+// Verifica se o e-mail foi enviado
+if ($mail->send()) {
+    echo 'E-mail enviado com sucesso!';
+} else {
+    echo 'Erro ao enviar e-mail: ' . $mail->ErrorInfo;
+}
 ?>
