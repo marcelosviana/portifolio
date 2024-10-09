@@ -209,21 +209,17 @@
                 <h2>Entre em contato:</h2>
             </div>
 
-            <form action="contact.php" method="post">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-            
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-            
-                <label for="assunto">Assunto:</label>
-                <input type="text" id="assunto" name="assunto">
-            
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" required></textarea>
-            
-                <button type="submit">Enviar Mensagem</button>
+            <form action="https://formspree.io/f/manywzyp" method="POST">
+
+                <input type="text" name="name" placeholder="Seu nome">
+
+                <input type="email" name="email" placeholder="Seu email">
+
+                <textarea name="message" placeholder="Sua mensagem"></textarea>
+
+                <button type="submit">Enviar</button>
             </form>
+            
 
         </section>
 
