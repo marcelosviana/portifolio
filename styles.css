@@ -34,8 +34,12 @@ footer {
 }
 
 .main-container {
-    min-height: calc(100vh - 100px); /* Subtrai a altura do rodapé */
+    margin-bottom: 0;
+    padding-bottom: 0;
+    position: relative; /* Posiciona o container como relativo */
+    z-index: 1; /* Garante que o conteúdo fique acima das partículas */
 }
+
 
 
 body {
@@ -56,6 +60,7 @@ body {
         margin: 0;
         height: 100vh; /* Permite que o corpo ocupe toda a altura da viewport */
         overflow-y:0; /* Habilita a rolagem vertical */
+       
 }
       
 .container {
@@ -212,7 +217,7 @@ footer {
 
 #particles-js {
 
-    position: absolute;
+    position: fixed;
 
     width: 100%;
 
@@ -224,7 +229,7 @@ footer {
 
     left: 0;
 
-    background-color: #333; /* Cor do fundo atrás das partículas */
+    background-color: #222; /* Cor do fundo atrás das partículas */
 
   }
 
@@ -236,9 +241,9 @@ footer {
 
     color: white;
 
-    padding-bottom: 20px; /* Espaço extra no final da seção */
+    padding-bottom: 10px; /* Espaço extra no final da seção */
 
-    min-height: 400px; /* Altura mínima da seção */
+    min-height: 750px; /* Altura mínima da seção */
 
 }
 
@@ -266,7 +271,7 @@ footer {
 
 .about-container {
 
-    padding-bottom: 450px; /* Isso garante que a imagem tenha espaço */
+    padding-bottom: 20px; /* Isso garante que a imagem tenha espaço */
 
 }
 
