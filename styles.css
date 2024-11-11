@@ -500,3 +500,13 @@ button {
 button:hover {
     background-color: #eceeef; /* Cor ao passar o mouse */
 }
+/* Estilos para telas menores (celulares) */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .container {
+        padding: 10px;
+    }
+    /* Outros ajustes específicos */
+}
