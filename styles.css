@@ -19,7 +19,7 @@ html, body {
 #page-content {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 98vh;
 }
 
 main {
@@ -27,7 +27,7 @@ main {
 }
 
 footer {
-    height: 100px;
+    height: 80px;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -50,7 +50,7 @@ body {
 
     color: #333;
 
-    line-height: 1.6;
+    line-height: 1.5;
 
     display: flex;
 
@@ -73,7 +73,7 @@ body {
 main {
 
     flex: 1;
-    min-height: 100vh;
+    min-height: 98vh;
 
 }
 
@@ -82,36 +82,25 @@ main {
 /* Estilo para o cabeçalho e navegação */
 
 header {
-
     background: #333;
-
     color: #fff;
-
-    padding: 10px 0;
-
+    padding: 5px 0;
+    width: 100%; /* Garantir que o cabeçalho ocupe toda a largura */
+    box-sizing: border-box; /* Incluir o padding dentro da largura total */
 }
-
 
 
 nav ul {
-
     list-style: none;
-
     text-align: center;
-
+    display: flex; /* Usar flexbox para os itens da lista */
+    justify-content: center; /* Centraliza os itens */
+    flex-wrap: nowrap; /* Impede que os itens quebrem para a linha seguinte */
 }
-
-
 
 nav ul li {
-
-    display: inline;
-
-    margin: 0 20px;
-
+    margin: 0 10px; /* Espaçamento entre os itens */
 }
-
-
 
 nav ul li a {
 
@@ -139,7 +128,7 @@ nav ul li a.active {
 
 section {
 
-    padding: 100px;
+    padding: 80px;
 
     margin: 10px 0;
 
@@ -155,19 +144,19 @@ footer {
 
     text-align: center;
 
-    padding: 0px;
+    padding: 5px;
 
     background: #333;
 
     color: #fff;
 
-    margin-top: 0;
+    margin: top 10%;
 
-    padding-top: 0;
+    padding-top: 20%;
 
     margin: 0;
 
-    padding: 0;
+    padding: 1%;
 
     bottom: 0;
 
@@ -271,7 +260,7 @@ footer {
 
 .about-container {
 
-    padding-bottom: 20px; /* Isso garante que a imagem tenha espaço */
+    padding-bottom: 50px; /* Isso garante que a imagem tenha espaço */
 
 }
 
@@ -309,9 +298,9 @@ footer {
 
     width: 90%; /* O texto ocupará 50% da largura da página */
 
-    margin: 0 auto; /* Centraliza o parágrafo horizontalmente */
+    margin: 1 auto; /* Centraliza o parágrafo horizontalmente */
 
-    margin-bottom: 60px;
+    margin-bottom: 10px;
 
 }
 
@@ -345,7 +334,7 @@ footer {
 
     width: 70%; /* O texto vai ocupar 55% do espaço */
 
-    padding-right: 20px; /* Espaçamento entre o texto e a imagem */
+    padding-right: 8px; /* Espaçamento entre o texto e a imagem */
 
     text-align: justify;
 
@@ -356,7 +345,7 @@ footer {
 
 .course-image {
 
-    width: 100%; /* Define a largura da imagem */
+    width: 110%; /* Define a largura da imagem */
 
     max-width: 900px; /* Limita o tamanho máximo da imagem */
 
@@ -366,7 +355,7 @@ footer {
 
 .course-image img {
 
-    width: 70%; /* Garante que a imagem preencha o espaço da div */
+    width: 100%; /* Garante que a imagem preencha o espaço da div */
 
     height: auto; /* Mantém a proporção da imagem */
 
@@ -376,8 +365,8 @@ footer {
 .courses-section {
     display: flex;
     flex-direction: column;
-    gap: 60px; /* Espaçamento entre os blocos */
-    margin: 0 auto;
+    gap: 100px; /* Espaçamento entre os blocos */
+    margin: 1 auto;
     padding: 90px;
     max-width: 1200px; /* Ajuste o tamanho máximo da seção */
 }
@@ -463,7 +452,7 @@ body {
 }
 
 form {
-    max-width: 400px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 20px;
     background-color: #333;
@@ -509,4 +498,14 @@ button:hover {
         padding: 10px;
     }
     /* Outros ajustes específicos */
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Coloca os itens em uma coluna para telas menores */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Adiciona espaçamento entre os itens em tela pequena */
+    }
 }
