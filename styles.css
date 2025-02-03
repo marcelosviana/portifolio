@@ -8,7 +8,10 @@
 
     box-sizing: border-box;
 
+    text-align: justify;
+
 }
+
 
 html, body {
     height: 100%;
@@ -334,7 +337,7 @@ footer {
 
     width: 70%; /* O texto vai ocupar 55% do espaço */
 
-    padding-right: 8px; /* Espaçamento entre o texto e a imagem */
+    padding-right: 13px; /* Espaçamento entre o texto e a imagem */
 
     text-align: justify;
 
@@ -413,6 +416,143 @@ footer {
 .course-item:last-child {
     margin-bottom: 0;
 }
+
+#projects {
+
+    color: #fff; /* Define a cor do texto como branco */
+
+}
+
+#projects  h2, #projects  p {
+
+    color: #fff;
+
+}
+
+#contact {
+
+    color: #fff; /* Define a cor do texto como branco */
+
+}
+
+#contact h2, #contact label, #contact input, #contact textarea {
+
+    color: #fff;
+
+}
+
+#projects p {
+
+    text-align: justify; /* Alinha o texto à esquerda */
+
+    width: 90%; /* O texto ocupará 50% da largura da página */
+
+    margin: 1 auto; /* Centraliza o parágrafo horizontalmente */
+
+    margin-bottom: 10px;
+
+}
+
+#projects img {
+
+    width: 50%; /* O parágrafo ocupa metade da página */
+}
+
+.project {
+
+    display: flex;
+
+    align-items: flex-start; /* Alinha o texto e a imagem ao topo */
+
+    justify-content: space-evenly; /* Espaço entre o texto e a imagem */
+
+    margin-bottom: 50px; /* Espaço entre as divs de projeto */
+
+    flex-wrap: nowrap; /* Impede que os elementos quebrem de linha */
+
+}
+
+.project-text {
+
+    width: 70%; /* O texto vai ocupar 55% do espaço */
+
+    padding-right: 13px; /* Espaçamento entre o texto e a imagem */
+
+    text-align: justify;
+
+    margin-bottom: 20px;
+}
+
+.project-image {
+
+    width: 110%; /* Define a largura da imagem */
+
+    max-width: 900px; /* Limita o tamanho máximo da imagem */
+
+}
+
+.project-image img {
+
+    width: 100%; /* Garante que a imagem preencha o espaço da div */
+
+    height: auto; /* Mantém a proporção da imagem */
+
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+
+}
+
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    gap: 100px; /* Espaçamento entre os blocos */
+    margin: 1 auto;
+    padding: 90px;
+    max-width: 1200px; /* Ajuste o tamanho máximo da seção */
+}
+
+.project-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project-content {
+    flex: 1;
+    margin-right: 20px;
+    color: #ffffff;
+}
+
+.project-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilo para inverter a ordem nos itens com classe 'reverse' */
+.project-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.project-item.reverse .project-content {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.project-item:last-child {
+    margin-bottom: 0; /* Remove margens extras no último item */
+}
+.project-item:last-child {
+    margin-bottom: 0;
+}
+
 body {
     height: auto;
     min-height: 100vh;
@@ -507,5 +647,15 @@ button:hover {
 
     nav ul li {
         margin-bottom: 10px; /* Adiciona espaçamento entre os itens em tela pequena */
+ 
     }
+
+}
+a {
+    color: hsla(0, 0%, 100%, 0.945); /* Substitua este código com a cor verde desejada */
+    text-decoration: none; /* Opcional: remove o sublinhado */
+}
+
+a:hover {
+    color: #535553; /* Cor quando o link for passado com o mouse */
 }
