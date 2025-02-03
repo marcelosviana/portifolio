@@ -8,18 +8,22 @@
 
     box-sizing: border-box;
 
+  
 }
+
 
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    text-align: justify;
+
 }
 
 #page-content {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 98vh;
 }
 
 main {
@@ -27,15 +31,20 @@ main {
 }
 
 footer {
-    height: 100px;
+    height: 80px;
     position: relative;
     bottom: 0;
     width: 100%;
+    text-align: center;
 }
 
 .main-container {
-    min-height: calc(100vh - 100px); /* Subtrai a altura do rodapé */
+    margin-bottom: 0;
+    padding-bottom: 0;
+    position: relative; /* Posiciona o container como relativo */
+    z-index: 1; /* Garante que o conteúdo fique acima das partículas */
 }
+
 
 
 body {
@@ -46,7 +55,7 @@ body {
 
     color: #333;
 
-    line-height: 1.6;
+    line-height: 1.5;
 
     display: flex;
 
@@ -56,6 +65,7 @@ body {
         margin: 0;
         height: 100vh; /* Permite que o corpo ocupe toda a altura da viewport */
         overflow-y:0; /* Habilita a rolagem vertical */
+       
 }
       
 .container {
@@ -68,7 +78,7 @@ body {
 main {
 
     flex: 1;
-    min-height: 100vh;
+    min-height: 98vh;
 
 }
 
@@ -77,36 +87,25 @@ main {
 /* Estilo para o cabeçalho e navegação */
 
 header {
-
     background: #333;
-
     color: #fff;
-
-    padding: 10px 0;
-
+    padding: 5px 0;
+    width: 100%; /* Garantir que o cabeçalho ocupe toda a largura */
+    box-sizing: border-box; /* Incluir o padding dentro da largura total */
 }
-
 
 
 nav ul {
-
     list-style: none;
-
     text-align: center;
-
+    display: flex; /* Usar flexbox para os itens da lista */
+    justify-content: center; /* Centraliza os itens */
+    flex-wrap: nowrap; /* Impede que os itens quebrem para a linha seguinte */
 }
-
-
 
 nav ul li {
-
-    display: inline;
-
-    margin: 0 20px;
-
+    margin: 0 10px; /* Espaçamento entre os itens */
 }
-
-
 
 nav ul li a {
 
@@ -134,7 +133,7 @@ nav ul li a.active {
 
 section {
 
-    padding: 100px;
+    padding: 80px;
 
     margin: 10px 0;
 
@@ -150,19 +149,19 @@ footer {
 
     text-align: center;
 
-    padding: 0px;
+    padding: 5px;
 
     background: #333;
 
     color: #fff;
 
-    margin-top: 0;
+    margin: top 10%;
 
-    padding-top: 0;
+    padding-top: 20%;
 
     margin: 0;
 
-    padding: 0;
+    padding: 1%;
 
     bottom: 0;
 
@@ -212,7 +211,7 @@ footer {
 
 #particles-js {
 
-    position: absolute;
+    position: fixed;
 
     width: 100%;
 
@@ -224,7 +223,7 @@ footer {
 
     left: 0;
 
-    background-color: #333; /* Cor do fundo atrás das partículas */
+    background-color: #222; /* Cor do fundo atrás das partículas */
 
   }
 
@@ -236,9 +235,9 @@ footer {
 
     color: white;
 
-    padding-bottom: 20px; /* Espaço extra no final da seção */
+    padding-bottom: 10px; /* Espaço extra no final da seção */
 
-    min-height: 400px; /* Altura mínima da seção */
+    min-height: 750px; /* Altura mínima da seção */
 
 }
 
@@ -266,7 +265,7 @@ footer {
 
 .about-container {
 
-    padding-bottom: 450px; /* Isso garante que a imagem tenha espaço */
+    padding-bottom: 50px; /* Isso garante que a imagem tenha espaço */
 
 }
 
@@ -304,9 +303,9 @@ footer {
 
     width: 90%; /* O texto ocupará 50% da largura da página */
 
-    margin: 0 auto; /* Centraliza o parágrafo horizontalmente */
+    margin: 1 auto; /* Centraliza o parágrafo horizontalmente */
 
-    margin-bottom: 60px;
+    margin-bottom: 10px;
 
 }
 
@@ -340,7 +339,7 @@ footer {
 
     width: 70%; /* O texto vai ocupar 55% do espaço */
 
-    padding-right: 20px; /* Espaçamento entre o texto e a imagem */
+    padding-right: 13px; /* Espaçamento entre o texto e a imagem */
 
     text-align: justify;
 
@@ -351,7 +350,7 @@ footer {
 
 .course-image {
 
-    width: 100%; /* Define a largura da imagem */
+    width: 110%; /* Define a largura da imagem */
 
     max-width: 900px; /* Limita o tamanho máximo da imagem */
 
@@ -361,7 +360,7 @@ footer {
 
 .course-image img {
 
-    width: 70%; /* Garante que a imagem preencha o espaço da div */
+    width: 100%; /* Garante que a imagem preencha o espaço da div */
 
     height: auto; /* Mantém a proporção da imagem */
 
@@ -371,8 +370,8 @@ footer {
 .courses-section {
     display: flex;
     flex-direction: column;
-    gap: 60px; /* Espaçamento entre os blocos */
-    margin: 0 auto;
+    gap: 100px; /* Espaçamento entre os blocos */
+    margin: 1 auto;
     padding: 90px;
     max-width: 1200px; /* Ajuste o tamanho máximo da seção */
 }
@@ -419,6 +418,143 @@ footer {
 .course-item:last-child {
     margin-bottom: 0;
 }
+
+#projects {
+
+    color: #fff; /* Define a cor do texto como branco */
+
+}
+
+#projects  h2, #projects  p {
+
+    color: #fff;
+
+}
+
+#contact {
+
+    color: #fff; /* Define a cor do texto como branco */
+
+}
+
+#contact h2, #contact label, #contact input, #contact textarea {
+
+    color: #fff;
+
+}
+
+#projects p {
+
+    text-align: justify; /* Alinha o texto à esquerda */
+
+    width: 90%; /* O texto ocupará 50% da largura da página */
+
+    margin: 1 auto; /* Centraliza o parágrafo horizontalmente */
+
+    margin-bottom: 10px;
+
+}
+
+#projects img {
+
+    width: 50%; /* O parágrafo ocupa metade da página */
+}
+
+.project {
+
+    display: flex;
+
+    align-items: flex-start; /* Alinha o texto e a imagem ao topo */
+
+    justify-content: space-evenly; /* Espaço entre o texto e a imagem */
+
+    margin-bottom: 50px; /* Espaço entre as divs de projeto */
+
+    flex-wrap: nowrap; /* Impede que os elementos quebrem de linha */
+
+}
+
+.project-text {
+
+    width: 70%; /* O texto vai ocupar 55% do espaço */
+
+    padding-right: 13px; /* Espaçamento entre o texto e a imagem */
+
+    text-align: justify;
+
+    margin-bottom: 20px;
+}
+
+.project-image {
+
+    width: 110%; /* Define a largura da imagem */
+
+    max-width: 900px; /* Limita o tamanho máximo da imagem */
+
+}
+
+.project-image img {
+
+    width: 100%; /* Garante que a imagem preencha o espaço da div */
+
+    height: auto; /* Mantém a proporção da imagem */
+
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+
+}
+
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    gap: 100px; /* Espaçamento entre os blocos */
+    margin: 1 auto;
+    padding: 90px;
+    max-width: 1200px; /* Ajuste o tamanho máximo da seção */
+}
+
+.project-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project-content {
+    flex: 1;
+    margin-right: 20px;
+    color: #ffffff;
+}
+
+.project-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilo para inverter a ordem nos itens com classe 'reverse' */
+.project-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.project-item.reverse .project-content {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.project-item:last-child {
+    margin-bottom: 0; /* Remove margens extras no último item */
+}
+.project-item:last-child {
+    margin-bottom: 0;
+}
+
 body {
     height: auto;
     min-height: 100vh;
@@ -458,7 +594,7 @@ body {
 }
 
 form {
-    max-width: 400px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 20px;
     background-color: #333;
@@ -494,4 +630,34 @@ button {
 }
 button:hover {
     background-color: #eceeef; /* Cor ao passar o mouse */
+}
+/* Estilos para telas menores (celulares) */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .container {
+        padding: 10px;
+    }
+    /* Outros ajustes específicos */
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Coloca os itens em uma coluna para telas menores */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Adiciona espaçamento entre os itens em tela pequena */
+ 
+    }
+
+}
+a {
+    color: hsla(0, 0%, 100%, 0.945); /* Substitua este código com a cor verde desejada */
+    text-decoration: none; /* Opcional: remove o sublinhado */
+}
+
+a:hover {
+    color: #535553; /* Cor quando o link for passado com o mouse */
 }
