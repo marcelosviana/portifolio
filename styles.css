@@ -99,8 +99,10 @@ nav ul {
     list-style: none;
     text-align: center;
     display: flex; /* Usar flexbox para os itens da lista */
-    justify-content: center; /* Centraliza os itens */
+    justify-content: flex-start; /* Alinha os links à esquerda */
+    padding-left: 20px; /* Ajusta o espaçamento da esquerda */
     flex-wrap: nowrap; /* Impede que os itens quebrem para a linha seguinte */
+    margin: 15px; /* Espaçamento entre os itens */
 }
 
 nav ul li {
@@ -567,14 +569,16 @@ body {
     padding-bottom: 0;
 }
 .home-button {
-    display: inline-block; /* Para que o botão se comporte como um botão */
+    display: block; /* Faz o botão ocupar toda a largura disponível */
+    width: fit-content; /* Faz o botão ter a largura do conteúdo */
+    margin: 5px auto; /* Centraliza o botão horizontalmente */
     padding: 10px 20px; /* Ajuste o padding conforme necessário */
     background-color: #4a5057; /* Cor do fundo */
     color: white; /* Cor do texto */
     text-decoration: none; /* Remove sublinhado */
     border-radius: 5px; /* Bordas arredondadas */
     transition: background-color 0.3s; /* Transição suave para hover */
-    margin-right: 900px; /* Adiciona espaço à direita do botão */
+    margin-right: 500px; /* Adiciona espaço à direita do botão */
 }
 
 .home-button:hover {
