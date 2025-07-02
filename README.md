@@ -30,11 +30,11 @@ Links
 | Projeto | Descrição | Tecnologias | Link |
 |--------|-----------|-------------|------|
 | **Portfólio Pessoal** 🧑‍💻 | Este repositório, onde apresento minha trajetória, projetos e contato. | HTML, CSS, JS | [Acessar](https://marceloviana.vercel.app) |
-| **Conta Bancária (Terminal)** 🏦 | Simula criação de conta via terminal com entrada de dados formatada. | Java, Scanner | [GitHub](https://github.com/marcelosviana/conta-terminal) |
-| **Sinopse** 🎮 | Busca interativa de filmes em base local com sinopse e links. | HTML, CSS, JS | [GitHub](https://github.com/marcelosviana/sinopse) |
-| **Contador com Exceções** 🔁 | Contador entre dois valores com validação e exceção customizada. | Java, Try/Catch | [GitHub](https://github.com/marcelosviana/contador) |
-| **Exercícios POO** 🧹 | Simulações com herança, encapsulamento e polimorfismo. | Java, OOP | [GitHub](https://github.com/marcelosviana/orientacao-objetos) |
-| **Banco Digital Java** 🏦 | Sistema com clientes, contas, operações e limite dinâmico. | Java, Interface, OOP | [GitHub](https://github.com/marcelosviana/banco-digital) |
+| **Conta Bancária (Terminal)** 🏦 | Simula criação de conta via terminal com entrada de dados formatada. | Java, Scanner | [GitHub](https://github.com/marcelosviana/bootcamp-santander-backend-java/tree/main/ContaTerminal) |
+| **Sinopse** 🎮 | Busca interativa de filmes em base local com sinopse e links. | HTML, CSS, JS | [GitHub](https://github.com/marcelosviana/projeto-alura-sinopse) |
+| **Contador com Exceções** 🔁 | Contador entre dois valores com validação e exceção customizada. | Java, Try/Catch | [GitHub](https://github.com/marcelosviana/bootcamp-santander-backend-java/tree/main/DesafioControleFluxo) |
+| **Exercícios POO** 🧹 | Simulações com herança, encapsulamento e polimorfismo. | Java, OOP | [GitHub](https://github.com/marcelosviana/bootcamp-santander-backend-java/tree/main/Orientacao%20a%20objetos%20-pratica) |
+| **Banco Digital Java** 🏦 | Sistema com clientes, contas, operações e limite dinâmico. | Java, Interface, OOP | [GitHub](https://github.com/marcelosviana/bootcamp-santander-backend-java/tree/main/lab_banco_digital) |
 
 
 ---
