@@ -11,7 +11,7 @@ Links
 
 🔗 [Demo](https://marceloviana.vercel.app)
 
-💻 [Código](https://github.com/marcelosviana/portifolio))
+💻 [Código](https://github.com/marcelosviana/portifolio)
 
 ---
 
