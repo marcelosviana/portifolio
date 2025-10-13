@@ -1,0 +1,70 @@
+/* responsive.css – Ajustes para telas menores que 768px */
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  .home-button {
+    margin: 10px auto;
+    display: block;
+  }
+
+  .about-container {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .about-photo {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+    display: block;
+  }
+
+  .course-item,
+  .project-item {
+    flex-direction: column !important;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .course-text,
+  .project-text {
+    width: 100% !important;
+    padding: 0 10px;
+  }
+
+  .course-image,
+  .project-image {
+    width: 100%;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  .course-image img,
+  .project-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  form {
+    width: 95%;
+    padding: 10px;
+  }
+}
