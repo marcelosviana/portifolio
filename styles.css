@@ -261,7 +261,7 @@ footer {
 
     opacity: 1; /* Defina a opacidade da imagem */
 
-    z-index: 0; /* A imagem estará acima do rodapé, mas não sobreposta ao texto */
+    z-index: 0.5; /* A imagem estará acima do rodapé, mas não sobreposta ao texto */
 
 }
 
