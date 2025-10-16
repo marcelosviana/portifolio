@@ -31,7 +31,7 @@ main {
 }
 
 footer {
-    height: 80px;
+    height: 90px;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -157,7 +157,7 @@ footer {
 
     color: #fff;
 
-    margin: top 10%;
+    margin: top 20%;
 
     padding-top: 20%;
 
@@ -261,7 +261,7 @@ footer {
 
     opacity: 1; /* Defina a opacidade da imagem */
 
-    z-index: 0.5; /* A imagem estará acima do rodapé, mas não sobreposta ao texto */
+    z-index: 0; /* A imagem estará acima do rodapé, mas não sobreposta ao texto */
 
 }
 
