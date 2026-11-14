@@ -1,393 +1,1310 @@
-
 <!DOCTYPE html>
-
-<html lang="pt-br">
-
+<html lang="pt-BR" class="dark scroll-smooth">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcelo da Silva Viana | Engenheiro de Computação & Backend Developer</title>
+  <meta name="description" content="Portfólio profissional de Marcelo da Silva Viana. Engenheiro de Computação & Desenvolvedor Backend especializado em APIs RESTful, bancos de dados relacionais e sistemas IoT (ESP32).">
+  <link rel="icon" href="MV.svg" type="image/svg+xml">
+  <link rel="icon" href="MV.png" type="image/png">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <meta charset="UTF-8">
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#090d16',
+              card: '#0f172a',
+              cardHover: '#131e35',
+              border: '#1e293b',
+              accent: '#38bdf8',
+              primary: '#3b82f6',
+              emerald: '#10b981',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 
-    <title>Marcelo Viana</title>
-    <link rel="icon" href="MV.png" type="image/x-icon">
+  <!-- FontAwesome 6 for Brand Icons (GitHub, LinkedIn, WhatsApp) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-
-    <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS -->
-
-    <link rel="stylesheet" href="responsive.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-
-
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="bg-[#090d16] text-slate-200 font-sans selection:bg-sky-500 selection:text-slate-950 antialiased relative min-h-screen">
 
-    <style>
-        p {
-          margin-bottom: 0.1em; /* espaço entre parágrafos */
-          text-indent: 30px; /* recuo no início do parágrafo */
-        }
-      </style>
+  <!-- Ambient Glow Effects -->
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
 
-    <!-- Cabeçalho -->
-
-    <header>
-
-        <nav>
-
-            <ul>
-
-                <li>
-                    <a href="index.html" class="home-button"data-tab="home">Home</a></li></a>
-                </li>
-                
-               
-                <li><a href="#" class="tab-link" data-tab="courses">Cursos e Certificações</a></li>
-
-                <li><a href="#" class="tab-link" data-tab="projects">Projetos</a></li>
-
-                <li><a href="#" class="tab-link" data-tab="contact">Contato</a></li>
-
-            </ul>
-
-        </nav>
-
-        
-
-    </header>
-
-
-
-    <!-- Conteúdo Principal -->
-
-    <main>
-
-        <!-- Seção Sobre -->
-
-        <section id="about" class="tab-content active">
-
-            <div class="about-container">
-
-             
-
-              <h1>Olá! Eu sou o Marcelo Viana,</h1>
-
-              <p> -Sou um desenvolvedor web especializado em backend e apaixonado por tecnologia, sempre em busca de novos desafios. Com experiência sólida em linguagens como Python, Java e JavaScript, meu foco está em criar sistemas robustos e eficientes, com integrações bem estruturadas e atenção especial ao desempenho. Também possuo conhecimentos em HTML e CSS, o que me ajuda a colaborar em projetos full stack quando necessário. Utilizo as IDEs VSCode e IntelliJ para otimizar meu fluxo de trabalho e garantir agilidade no desenvolvimento. Ao longo da minha trajetória, participei de projetos variados, desde APIs e serviços backend até sistemas web mais complexos, sempre aprendendo e aprimorando minhas habilidades técnicas e de comunicação.</p>
-
-              <p>Minha paixão é resolver problemas desafiadores, transformando ideias em soluções práticas. Recentemente, venho aprofundando meu conhecimento em bancos de dados e arquiteturas escaláveis, expandindo ainda mais meu conjunto de habilidades.A programação, para mim, é mais do que um trabalho – é uma forma de criar e transformar o mundo digital. Quando não estou programando, gosto de explorar novas tecnologias, aprender algo novo ou simplesmente curtir uma boa música.</p>
-                
-              <p> Se quiser conferir meus projetos ou entrar em contato, fique à vontade para visitar meu GitHub e LinkedIn. Estou sempre aberto a novas oportunidades e colaborações – vamos construir algo incrível juntos!
-                </p>
-
-                <img src="fotoport.png" alt="Sua Foto" class="about-photo">
-
-            </div>
-
-        </section>
-
-
-
-        <!-- Seção de Cursos -->
-
-        <section id="courses" class="tab-content">
-            <title>sos | Cursos</title>
-            <div class="course-item">
-                <div class="course-text"><title>sos | Cursos</title>
-                    <h2> - Bootcamp Santander 2024 - Backend com Java (DIO)</h2>
-                    <p>O Bootcamp Santander 2024 – Backend com Java, promovido em parceria com a
-                        DIO, proporcionou uma imersão completa no desenvolvimento backend utilizando a
-                        linguagem de programação Java. O programa abordou desde os fundamentos do Java
-                        até conceitos avançados, incluindo o uso de frameworks populares, práticas de boas
-                        implementações e padrões de design. A parte prática foi uma componente crucial do
-                        aprendizado, com momentos dedicados à criação de APIs RESTful, integração com
-                        bancos de dados, e construção de aplicações robustas e escaláveis.</p>
-                </div>
-                <div class="course-image">
-                    <img src="bootcamp.png" alt="Imagem do Curso 1">
-                </div>
-            </div>
-        <div class="course-item reverse">
-
-            <div class="course-text">
-
-                <h2> - Trilha de Conhecimento – Banco de Dados (Fundação Bradesco)</h2>
-
-                <p>O curso abordou a importância e a utilidade dos bancos de dados como coleções
-                    organizadas de informações estruturadas, armazenadas eletronicamente em sistemas de
-                    computadores. Pois, com a crescente valorização da informação no mundo moderno,
-                    compreendemos seu papel fundamental na tomada de decisões por pessoas e empresas.
-                    A trilha de aprendizado destacou a relevância da modelagem de dados, especialmente
-                    considerando os avanços tecnológicos dos últimos anos. Foram introduzidas terminologias essenciais para a implementação e administração de bancos de dados,
-                    além de práticas para gerenciar eficientemente as atividades relacionadas a essa função.</p>
-            </div>
-
-            <div class="course-image">
-
-                <img src="banco-dados.jpeg" alt="Imagem do Curso 2">
-
-            </div>
-
+  <!-- ========================================================================= -->
+  <!-- NAVBAR FIXA E TRANSLÚCIDA                                                  -->
+  <!-- ========================================================================= -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Logo / Monograma -->
+      <a href="#hero" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 flex items-center justify-center p-1 rounded-xl bg-slate-900/40 border border-slate-800/80 group-hover:border-sky-500/40 group-hover:bg-slate-900/80 transition-all">
+          <img src="MV.png" alt="MV Logo" class="w-full h-full object-contain filter group-hover:drop-shadow-[0_0_8px_rgba(56,189,248,0.5)] transition-all">
         </div>
-        <div class="course-item">
-            <div class="course-text">
-            <h2> - Trilha de Conhecimento – Linguagem de Programação Python (Fundação Bradesco)</h2>
-            <p>A linguagem de programação Python tem se destacado nos últimos anos por sua
-                    simplicidade e grande compatibilidade, funcionando eficientemente em uma ampla
-                    variedade de sistemas operacionais. Esta trilha de aprendizado começa de maneira
-                    didática, introduzindo o conceito de raciocínio lógico e demonstrando como a lógica está
-                    presente em nosso cotidiano. A trilha avança para apresentar a programação orientada a
-                    objetos (POO), detalhando seus quatro pilares fundamentais: abstração, encapsulamento,
-                    herança e polimorfismo. Além disso, são apresentados exemplos de outras linguagens
-                    orientadas a objetos, como Java, C++ e C#. O objetivo principal da trilha é combinar teoria
-                    e prática do raciocínio lógico utilizando a linguagem Python, através do desenvolvimento
-                    de programas básicos em modo console. A trilha também explora de forma simples as
-                    principais plataformas de desenvolvimento, capacitando os participantes a criar soluções
-                    eficazes.</p>
-            </div>
-            <div class="course-image">
-                <img src="trilha-python.png" alt="Imagem do Curso 3">
-            </div>
+        <div>
+          <span class="font-bold text-white tracking-tight group-hover:text-sky-400 transition-colors">Marcelo Viana</span>
+          <span class="hidden sm:block text-[11px] font-mono text-slate-400 tracking-wider uppercase">Eng. Computação & Backend</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+        <a href="#hero" class="desktop-nav-link text-slate-300 hover:text-sky-400 transition-colors">Início</a>
+        <a href="#sobre" class="desktop-nav-link text-slate-300 hover:text-sky-400 transition-colors">Sobre</a>
+        <a href="#stack" class="desktop-nav-link text-slate-300 hover:text-sky-400 transition-colors">Stack</a>
+        <a href="#projetos" class="desktop-nav-link text-slate-300 hover:text-sky-400 transition-colors">Projetos</a>
+        <a href="#carreira" class="desktop-nav-link text-slate-300 hover:text-sky-400 transition-colors">Carreira & Formação</a>
+        <a href="#certificacoes" class="desktop-nav-link text-slate-300 hover:text-sky-400 transition-colors">Certificações</a>
+      </nav>
+
+      <!-- Desktop Action CTA & Socials -->
+      <div class="hidden md:flex items-center gap-3">
+        <div class="flex items-center gap-1 pr-2 border-r border-slate-800">
+          <a href="https://github.com/marcelosviana" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800/80 transition-all" title="GitHub de Marcelo Viana" aria-label="GitHub">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/marcelosilvaviana" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg text-slate-400 hover:text-sky-400 hover:bg-slate-800/80 transition-all" title="LinkedIn de Marcelo Viana" aria-label="LinkedIn">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.6 1.6 0 0 0-1.6 1.6 1.6 1.6 0 0 0 1.6 1.6 1.6 1.6 0 0 0 1.6-1.6 1.6 1.6 0 0 0-1.6-1.6Z"/></svg>
+          </a>
+        </div>
+        <a href="#contato" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold uppercase tracking-wider text-slate-900 bg-sky-400 hover:bg-sky-300 shadow-md shadow-sky-500/20 transition-all transform hover:-translate-y-0.5">
+          <i data-lucide="mail" class="w-4 h-4"></i>
+          <span>Contato</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800/60 focus:outline-none" aria-label="Abrir Menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Overlay -->
+    <div id="mobile-menu-overlay" class="hidden md:hidden fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-40"></div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden md:hidden fixed top-20 right-0 bottom-0 w-3/4 max-w-xs bg-slate-900 border-l border-slate-800 p-6 z-50 flex flex-col justify-between">
+      <div class="flex flex-col gap-4 text-base font-medium">
+        <a href="#hero" class="mobile-nav-link py-2 text-slate-300 hover:text-sky-400 border-b border-slate-800/60">Início</a>
+        <a href="#sobre" class="mobile-nav-link py-2 text-slate-300 hover:text-sky-400 border-b border-slate-800/60">Sobre</a>
+        <a href="#stack" class="mobile-nav-link py-2 text-slate-300 hover:text-sky-400 border-b border-slate-800/60">Tech Stack</a>
+        <a href="#projetos" class="mobile-nav-link py-2 text-slate-300 hover:text-sky-400 border-b border-slate-800/60">Projetos Técnicos</a>
+        <a href="#carreira" class="mobile-nav-link py-2 text-slate-300 hover:text-sky-400 border-b border-slate-800/60">Carreira & Formação</a>
+        <a href="#certificacoes" class="mobile-nav-link py-2 text-slate-300 hover:text-sky-400 border-b border-slate-800/60">Certificações</a>
+        <a href="#contato" class="mobile-nav-link py-2 text-sky-400 font-semibold">Contato Direto</a>
+      </div>
+
+      <div class="pt-6 border-t border-slate-800 flex justify-around text-slate-400">
+        <a href="https://github.com/marcelosviana" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors" title="GitHub" aria-label="GitHub">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/marcelosilvaviana" target="_blank" rel="noopener noreferrer" class="hover:text-sky-400 transition-colors" title="LinkedIn" aria-label="LinkedIn">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.6 1.6 0 0 0-1.6 1.6 1.6 1.6 0 0 0 1.6 1.6 1.6 1.6 0 0 0 1.6-1.6 1.6 1.6 0 0 0-1.6-1.6Z"/></svg>
+        </a>
+        <a href="https://wa.me/5518981470269" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition-colors" title="WhatsApp" aria-label="WhatsApp">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+        </a>
+        <a href="mailto:marceloviana836@gmail.com" class="hover:text-amber-400 transition-colors" title="E-mail" aria-label="E-mail">
+          <i data-lucide="mail" class="w-5 h-5"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- HERO SECTION                                                              -->
+  <!-- ========================================================================= -->
+  <section id="hero" class="relative pt-32 pb-20 md:pt-44 md:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+      
+      <!-- Left Content: Headline & Value Proposition -->
+      <div class="lg:col-span-7 space-y-6">
+        <!-- Status Pill -->
+        <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full text-xs font-mono font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 backdrop-blur-sm">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>Disponível para novos desafios e contratação</span>
         </div>
 
-        <div class="course-item reverse">
-            <div class="course-text">
-                <h2> - Curso Análise de dados como suporte à tomada de decisão (ENAP)</h2>
-                <p>O curso online de Análise de Dados como Suporte à Tomada de Decisão, oferecido
-                    pela Escola Nacional de Administração Pública (ENAP), apresentou uma abordagem
-                    prática e teórica sobre como os dados podem ser utilizados para embasar decisões
-                    estratégicas. O conteúdo foi distribuído em quatro módulos principais: O Módulo 1
-                    introduziu os conceitos fundamentais da análise de dados, fornecendo uma base sólida
-                    sobre a importância dos dados no processo decisório. O Módulo 2 abordou o pré-
-                    processamento de dados, ensinando técnicas de limpeza, transformação e organização
-                    de grandes volumes de informações. No Módulo 3, foi explorada a análise descritiva,
-                    enfatizando a importância de métricas e indicadores para compreender os dados. O curso
-                    se encerrou com o Módulo 4, que apresentou o desenvolvimento de painéis de Business
-                    Intelligence (BI), capacitando os participantes a criar visualizações interativas e relatórios
-                    dinâmicos que facilitam a interpretação dos dados.</p>
-            </div>
-            <div class="course-image">
-                <img src="analise-dados.png" alt="Imagem do Curso 4">
-            </div>
+        <!-- Main Title -->
+        <div class="space-y-2">
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
+            Olá, eu sou <span class="text-white">Marcelo da Silva Viana</span>
+          </h1>
+          <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-sky-400 via-blue-500 to-indigo-400 bg-clip-text text-transparent">
+            Engenheiro de Computação & Backend Developer
+          </h2>
         </div>
 
-        <div class="course-item">
-            <div class="course-text">
-                <h2> - Curso Liderança e Gestão De Equipes(ENAP)</h2>
-                <p>O curso Liderança e Gestão de Equipes, também oferecido pela ENAP,
-                    proporcionou uma visão abrangente e prática sobre como liderar e gerenciar equipes de
-                    forma eficaz. O conteúdo foi dividido em três módulos principais: O Módulo 1 abordou a
-                    essência da liderança, destacando as principais características de um líder eficaz e as
-                    diferentes abordagens para influenciar e inspirar equipes. O Módulo 2 tratou de técnicas e
-                    abordagens para o trabalho em equipe, ensinando estratégias para promover a
-                    colaboração, resolver conflitos e melhorar a comunicação dentro dos grupos. Por fim, o
-                    Módulo 3 explorou o impacto do clima organizacional no desempenho das equipes,
-                    enfatizando como um ambiente de trabalho positivo pode ser um propulsor para a
-                    produtividade e a inovação.</p>
-            </div>
-            <div class="course-image">
-                <img src="lideranca.png" alt="Imagem do Curso 5">
-            </div>
+        <!-- Value Pitch -->
+        <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
+          Especialista no desenvolvimento de <strong class="text-white">APIs RESTful seguras</strong>, arquitetura de bancos de dados relacionais com controle transacional e <strong class="text-white">sistemas embarcados IoT (ESP32)</strong>. Graduando em Engenharia de Computação e formado em TI com ênfase em IoT pela <span class="text-sky-400 font-medium">UNIVESP</span>, combinando teoria de sistemas com entregas práticas de alto impacto.
+        </p>
+
+        <!-- Quick Metrics Pill Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 pb-2">
+          <div class="glass-panel p-3 rounded-xl border border-slate-800">
+            <span class="text-xs font-mono text-slate-400 block">Graduação</span>
+            <span class="text-sm font-semibold text-white">Eng. Computação</span>
+          </div>
+          <div class="glass-panel p-3 rounded-xl border border-slate-800">
+            <span class="text-xs font-mono text-slate-400 block">Foco Primário</span>
+            <span class="text-sm font-semibold text-sky-400">Backend & IoT</span>
+          </div>
+          <div class="glass-panel p-3 rounded-xl border border-slate-800">
+            <span class="text-xs font-mono text-slate-400 block">Concorrência</span>
+            <span class="text-sm font-semibold text-emerald-400">Transações ACID</span>
+          </div>
+          <div class="glass-panel p-3 rounded-xl border border-slate-800">
+            <span class="text-xs font-mono text-slate-400 block">Atuação</span>
+            <span class="text-sm font-semibold text-white">Remoto / Híbrido</span>
+          </div>
         </div>
 
-        <div class="course-item reverse">
-            <div class="course-text">
-                <h2> - Curso HTML5: Fundamentos para Construção de Páginas Web
-                    Modernas(IFRS)</h2>
-                <p>O curso de HTML5, oferecido pelo Instituto Federal do Rio Grande do Sul (IFRS),
-                    apresentou os princípios essenciais para o desenvolvimento de sites modernos utilizando
-                    HTML5. O conteúdo programático iniciou com uma introdução à história, evolução e
-                    principais características do HTML5, destacando suas vantagens em relação às versões
-                    anteriores. A estruturação de páginas web com o uso de linguagens de marcação foi
-                    abordada em detalhe, junto com a inserção de imagens, links, listas e tabelas, elementos
-                    cruciais para criar páginas bem estruturadas. O curso também ensinou como trabalhar
-                    com formulários, oferecendo uma base sólida para o desenvolvimento de interfaces
-                    interativas e funcionais.</p>
-            </div>
-            <div class="course-image">
-                <img src="html5.png" alt="Imagem do Curso 4">
-            </div>
+        <!-- CTA Buttons -->
+        <div class="flex flex-wrap items-center gap-4 pt-4">
+          <a href="#projetos" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-slate-950 bg-sky-400 hover:bg-sky-300 shadow-lg shadow-sky-500/25 transition-all transform hover:-translate-y-0.5">
+            <i data-lucide="layers" class="w-4 h-4"></i>
+            <span>Ver Projetos em Destaque</span>
+          </a>
+
+          <a href="https://wa.me/5518981470269?text=Olá%20Marcelo,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar." target="_blank" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-medium text-slate-300 bg-slate-900/90 hover:bg-slate-800 border border-slate-700/80 hover:text-white transition-all transform hover:-translate-y-0.5">
+            <i data-lucide="message-circle" class="w-4 h-4 text-emerald-400"></i>
+            <span>WhatsApp Direto</span>
+          </a>
+
+          <!-- Social Links Quick Bar -->
+          <div class="flex items-center gap-2 pl-1">
+            <a href="https://github.com/marcelosviana" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-400 hover:text-white hover:border-slate-600 hover:bg-slate-800 transition-all shadow-sm" title="GitHub de Marcelo Viana" aria-label="GitHub">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/marcelosilvaviana" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-400 hover:text-sky-400 hover:border-sky-500/50 hover:bg-slate-800 transition-all shadow-sm" title="LinkedIn de Marcelo Viana" aria-label="LinkedIn">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.6 1.6 0 0 0-1.6 1.6 1.6 1.6 0 0 0 1.6 1.6 1.6 1.6 0 0 0 1.6-1.6 1.6 1.6 0 0 0-1.6-1.6Z"/></svg>
+            </a>
+            <a href="mailto:marceloviana836@gmail.com" class="p-2.5 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-400 hover:text-amber-400 hover:border-amber-500/50 hover:bg-slate-800 transition-all shadow-sm" title="E-mail: marceloviana836@gmail.com" aria-label="E-mail">
+              <i data-lucide="mail" class="w-5 h-5"></i>
+            </a>
+          </div>
         </div>
-        </section>
+      </div>
 
-
-          <!-- Seção Projetos-->
-
-          <section id="projects" class="tab-content">
-            <title>Projetos</title>
-            <div class="project-item">
-                <div class="project-text">
-                    <h2>  O presente -Portifólio-</h2>
-                    <p>🌐 Meu Portfólio</p>
-                        <p>Este portfólio é um dos meus projetos pessoais, desenvolvido inteiramente por mim com o objetivo de reunir e apresentar minhas habilidades, experiências e criações. Desde a concepção do design até a implementação de funcionalidades, cada detalhe foi pensado para refletir minha identidade profissional. Este projeto também conta com a colaboração e insights valiosos obtidos ao longo do processo, o que o torna uma peça fundamental no meu crescimento como programador.</p>
-
-                        <a href="https://github.com/mviana836/mviana836.github.io" target="_blank"> 🔗 Link do Git hub do -Portifólio-</a>
-                </div>
-                <div class="project-image">
-                    <img src="port.png" alt="Imagem do portifolio">
-                </div>
-            </div>
-
-            <div class="project-item reverse">
-                <div class="project-text">
-                    <h2>  Conta Terminal</h2>
-                    <p>🏦 Conta Bancária Simples (Bootcamp Backend com Java)</p>
-                        <p>Este projeto foi desenvolvido como parte do Bootcamp Backend com Java e consiste em um programa simples de terminal que simula a criação de uma conta bancária. O usuário informa seu nome, agência, número da conta e saldo inicial. O sistema captura esses dados via Scanner e exibe uma mensagem formatada confirmando a criação da conta.
-                    
-                    </p>
-
-                    <p>🛠️ Tecnologias utilizadas: Java, Scanner, Entrada e Saída de Dados.</p>
-
-                    <a href="https://github.com/marcelosviana/bootcamp-santander-backend-java/tree/main/ContaTerminal" target="_blank"> 🔗 Link do Git hub do -Conta Terminal-</a>
-                    
-                </div>
-                <div class="project-image">
-                    <img src="contater.png" alt="Imagem do Conta Terminal">
-                </div>
-            </div>
-
-            <div class="project-item">
-                <div class="project-text">
-                    <h2>  Sinopse </h2>
-                    <p>Sinopse 🎞️</p>
-                        <p>Sinopse é uma aplicação web interativa desenvolvida durante o curso de imersão da Alura. Utilizando HTML, CSS e JavaScript, o projeto permite aos usuários pesquisarem filmes de forma rápida e intuitiva, filtrando títulos e sinopses em uma base de dados pré-definida. Os resultados incluem links para mais informações, garantindo uma experiência fluida e dinâmica em uma interface minimalista e amigável.</p>
-
-                        <a href="https://github.com/mviana836/Projeto-Alura" target="_blank"> 🔗 Link do Git hub do -Sinopse-</a>
-                </div>
-                <div class="project-image">
-                    <img src="sinopse.png" alt="Imagem do sinopse">
-                </div>
-            </div>
-
-             <div class="project-item reverse">
-                <div class="project-text">
-                    <h2>🔁 Contador Simples com Tratamento de Exceções Personalizado em Java</h2>
-                    <p>🧮 Contador com Validação de Parâmetros - Java(Bootcamp Backend com Java)</p>
-                        <p>Este projeto foi desenvolvido como parte do Bootcamp Backend com Java e consiste em um programa de terminal que realiza uma contagem simples entre dois números informados pelo usuário. O sistema solicita dois parâmetros inteiros e valida se o segundo é maior que o primeiro, lançando uma exceção personalizada (ParametrosInvalidosException) em caso contrário. Se a entrada for válida, o programa imprime a contagem do intervalo.
-                    </p>
-
-                    <p> 🛠️ Tecnologias utilizadas: Java, Scanner, Laços de Repetição, Try/Catch e Exceções Personalizadas</p>
-
-                    <a href="https://github.com/marcelosviana/bootcamp-santander-backend-java/tree/main/DesafioControleFluxo" target="_blank"> 🔗 Link do Git hub do -Contador-</a>
-                    
-                </div>
-                <div class="project-image">
-                    <img src="contador.png" alt="Imagem do Contador">
-                </div>
-            </div>
-
-             <div class="project-item">
-                <div class="project-text">
-                    <h2>  🧩 Orientação a Objetos </h2>
-                    <p>📚 Coleção de Exercícios Práticos em Java (POO)</p>
-                        <p>Este conjunto de projetos foi desenvolvido com foco nos pilares da Programação Orientada a Objetos em Java. Cada exercício simula situações do mundo real, como contas bancárias, transações financeiras e sistemas de cofres, utilizando conceitos como herança, polimorfismo, encapsulamento e abstração.
-
-                    <p> 🛠️ Tecnologias utilizadas: Java, Classes e Objetos, Herança, Encapsulamento, Polimorfismo, Streams, Entrada e Saída de Dados.</p>
-
-                        <a href="https://github.com/marcelosviana/bootcamp-santander-backend-java/tree/main/Orientacao%20a%20objetos%20-pratica" target="_blank"> 🔗 Link do Git hub do -Orientação a Objetos-</a>
-                </div>
-                <div class="project-image">
-                    <img src="orientação.png" alt="Imagem do Orientação a Objetos">
-                </div>
-            </div>
-
-             <div class="project-item reverse">
-                <div class="project-text">
-                    <h2>🏦 Banco Digital Java (Bootcamp Santander)</h2>
-                    <p>🧮 Contador com Validação de Parâmetros - Java(Bootcamp Backend com Java)</p>
-                        <p>  Este projeto simula o funcionamento de um banco digital, permitindo a criação de clientes e contas (corrente e poupança), com operações como depósito, saque e transferência. A Conta Corrente implementa um limite dinâmico baseado em uma análise simulada. O sistema é baseado em princípios da Programação Orientada a Objetos com uso de classes abstratas, herança, encapsulamento e interface.
-                    </p>
-
-                    <p>🛠️ Tecnologias utilizadas: Java, Scanner, POO, Interface, Entrada/Saída.</p>
-
-                    <a href="https://github.com/marcelosviana/bootcamp-santander-backend-java/tree/main/lab_banco_digital" target="_blank"> 🔗 Link do Git hub do -Banco Digital-</a>
-                    
-                </div>
-                <div class="project-image">
-                    <img src="bancodigital.png" alt="Imagem do bancodigital">
-                </div>
-            </div>
-
-
-        </section>
-
-
-
-        <!-- Seção de Contato -->
-
-        <section id="contact" class="tab-content" >
-
-            <div class="titulo">
-                <h2>Entre em contato:</h2>
-            </div>
-
-            <form action="https://formspree.io/f/manywzyp" method="POST">
-
-                <input type="text" name="name" placeholder="Seu nome">
-
-                <input type="email" name="email" placeholder="Seu email">
-
-                <textarea name="message" placeholder="Sua mensagem"></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
+      <!-- Right Column: Profile Picture & Floating Highlights -->
+      <div class="lg:col-span-5 flex justify-center">
+        <div class="relative w-72 sm:w-80 md:w-96">
+          <!-- Ambient card background glow -->
+          <div class="absolute -inset-1.5 bg-gradient-to-tr from-sky-500/40 via-blue-600/30 to-indigo-500/40 rounded-3xl blur-xl opacity-70"></div>
+          
+          <div class="relative rounded-2xl overflow-hidden border border-slate-700/80 bg-slate-900 shadow-2xl">
+            <img src="fotoport.png" alt="Marcelo da Silva Viana" class="w-full h-auto object-cover object-center transform hover:scale-105 transition-transform duration-500">
             
+            <!-- Bottom glass tag inside photo -->
+            <div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent">
+              <div class="flex items-center justify-between">
+                <div>
+                  <span class="text-xs font-mono text-sky-400 block">Rosana, SP • Brasil</span>
+                  <span class="text-sm font-semibold text-white">Marcelo da Silva Viana</span>
+                </div>
+                <div class="flex items-center gap-1.5 text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md border border-emerald-500/20">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+                  Online
+                </div>
+              </div>
+            </div>
+          </div>
 
-        </section>
+          <!-- Floating badge: Experience highlight -->
+          <div class="absolute -bottom-6 -left-6 bg-slate-900/95 border border-slate-700/80 backdrop-blur-md p-3.5 rounded-xl shadow-xl flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 flex-shrink-0">
+              <i data-lucide="cpu" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <div class="text-xs font-bold text-white">Sistemas IoT & Backend</div>
+              <div class="text-[11px] font-mono text-slate-400">ESP32 • MySQL • Java • Python</div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <!-- Adicionar o script Particles.js -->
+    </div>
+  </section>
 
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- ========================================================================= -->
+  <!-- SEÇÃO SOBRE                                                               -->
+  <!-- ========================================================================= -->
+  <section id="sobre" class="py-20 border-t border-slate-800/80 bg-slate-950/40 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <span class="text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold block">Perfil Profissional</span>
+        <h2 class="text-3xl font-extrabold text-white tracking-tight">
+          Engenharia com foco em Resolução de Problemas
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base">
+          Abordagem pragmática unindo o rigor científico da Engenharia de Computação à agilidade das melhores práticas do ecossistema moderno de software.
+        </p>
+      </div>
 
-<div id="particles-js"></div>
-
-
-
-    </main>
-
-
-
-    <!-- Rodapé -->
-
-    <footer>
-
-        <p>© 2024 Marcelo Viana</p>
-
-        <div class="social-links">
-
-            <a href="https://github.com/marcelosviana" target="_blank"><i class="fab fa-github"></i></a>
-
-            <a href="https://linkedin.com/in/marcelo-sviana" target="_blank"><i class="fab fa-linkedin"></i></a>
-
-            <a href="https://facebook.com/marcelosviana" target="_blank"><i class="fab fa-facebook"></i></a>
-
-            <a href="https://instagram.com/mrcelosviana/" target="_blank"><i class="fab fa-instagram"></i></a>
-
-            <a href="https://api.whatsapp.com/send/?phone=5518981470269&text&type=phone_number&app_absent=0" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Text Column -->
+        <div class="lg:col-span-7 space-y-5 text-slate-300 leading-relaxed text-sm sm:text-base">
+          <p>
+            Minha trajetória é guiada pela paixão em compreender como as coisas funcionam do silício ao servidor. Com dupla formação pela <strong class="text-white">UNIVESP</strong> (graduando em Engenharia de Computação e formado em TI com ênfase em IoT), atuo na intersecção entre <strong class="text-white">firmwares embarcados e serviços backend escaláveis</strong>.
+          </p>
+          <p>
+            Possuo experiência prática no desenvolvimento de motores transacionais e APIs RESTful em ambientes de produção freelance, onde modelei bancos relacionais <strong class="text-white">MySQL</strong> com travas transacionais ACID para mitigar concorrência crítica e implementei mecanismos de autenticação <em>stateless</em> com tokens temporários criptográficos.
+          </p>
+          <p>
+            No universo de hardware e IoT, desenvolvo soluções completas com <strong class="text-white">ESP32</strong> e sensores industriais para monitoramento térmico em tempo real de cadeias de frio (salas de vacina), garantindo telemetria contínua via HTTP/JSON e persistência confiável.
+          </p>
+          <p class="pt-2 text-slate-400 text-sm font-mono flex items-center gap-2">
+            <i data-lucide="terminal" class="w-4 h-4 text-sky-400"></i>
+            <span>Clean Code • Transações ACID • RESTful Design • IoT Telemetry • Docker</span>
+          </p>
         </div>
 
-    </footer>
+        <!-- Pillars Grid Column -->
+        <div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-sky-500/30 transition-all">
+            <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 mb-3">
+              <i data-lucide="server" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-sm font-bold text-white mb-1">APIs & Backend</h3>
+            <p class="text-xs text-slate-400 leading-normal">Arquitetura modular, autenticação stateless segura, tratamento estruturado de exceções e contratos RESTful.</p>
+          </div>
 
+          <div class="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-emerald-500/30 transition-all">
+            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-3">
+              <i data-lucide="database" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-sm font-bold text-white mb-1">Integridade & SQL</h3>
+            <p class="text-xs text-slate-400 leading-normal">Modelagem relacional, consultas otimizadas, índices e controle de concorrência com transações ACID.</p>
+          </div>
 
+          <div class="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-indigo-500/30 transition-all">
+            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 mb-3">
+              <i data-lucide="radio" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-sm font-bold text-white mb-1">IoT & Embarcados</h3>
+            <p class="text-xs text-slate-400 leading-normal">Firmware em C/C++ para ESP32, sensoriamento de dupla precisão (DS18B20/DHT22) e telemetria em tempo real.</p>
+          </div>
 
-    <script src="scripts.js"></script> <!-- JavaScript -->
-    <script>
-        // Obtém a URL da página atual
-        const currentPage = window.location.pathname;
+          <div class="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-amber-500/30 transition-all">
+            <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-3">
+              <i data-lucide="boxes" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-sm font-bold text-white mb-1">DevOps & Automação</h3>
+            <p class="text-xs text-slate-400 leading-normal">Orquestração com Docker Compose, automação de processos com JavaScript assíncrono e metodologias ágeis.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- TECH STACK & FERRAMENTAS                                                  -->
+  <!-- ========================================================================= -->
+  <section id="stack" class="py-20 border-t border-slate-800/80 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <span class="text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold block">Arsenal Técnico</span>
+        <h2 class="text-3xl font-extrabold text-white tracking-tight">
+          Tecnologias & Ferramentas Dominadas
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base">
+          Grid categorizado de tecnologias aplicadas no desenvolvimento diário de software e engenharia.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Categoria 1: Backend & Linguagens -->
+        <div class="glass-panel p-6 rounded-2xl border border-slate-800 space-y-4">
+          <div class="flex items-center gap-3 pb-3 border-b border-slate-800/80">
+            <div class="p-2 rounded-lg bg-sky-500/10 text-sky-400">
+              <i data-lucide="code" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-bold text-white text-base">Backend & APIs</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800/90 text-sky-300 border border-slate-700/60">Java 17+ (POO)</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800/90 text-sky-300 border border-slate-700/60">Python (Flask/Django)</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800/90 text-sky-300 border border-slate-700/60">PHP 8+</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800/90 text-sky-300 border border-slate-700/60">Node.js (Express)</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800/90 text-sky-300 border border-slate-700/60">APIs RESTful</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800/90 text-sky-300 border border-slate-700/60">Tokens Stateless</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800/90 text-sky-300 border border-slate-700/60">C/C++ (Embarcados)</span>
+          </div>
+        </div>
+
+        <!-- Categoria 2: Bancos de Dados -->
+        <div class="glass-panel p-6 rounded-2xl border border-slate-800 space-y-4">
+          <div class="flex items-center gap-3 pb-3 border-b border-slate-800/80">
+            <div class="p-2 rounded-lg bg-emerald-500/10 text-emerald-400">
+              <i data-lucide="database" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-bold text-white text-base">Bancos de Dados</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800/90 text-emerald-300 border border-slate-700/60">MySQL (Queries Puras)</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800/90 text-emerald-300 border border-slate-700/60">Transações ACID</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800/90 text-emerald-300 border border-slate-700/60">PostgreSQL</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800/90 text-emerald-300 border border-slate-700/60">SQLite3</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800/90 text-emerald-300 border border-slate-700/60">Modelagem Relacional</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800/90 text-emerald-300 border border-slate-700/60">SQLAlchemy</span>
+          </div>
+        </div>
+
+        <!-- Categoria 3: IoT & Hardware -->
+        <div class="glass-panel p-6 rounded-2xl border border-slate-800 space-y-4">
+          <div class="flex items-center gap-3 pb-3 border-b border-slate-800/80">
+            <div class="p-2 rounded-lg bg-indigo-500/10 text-indigo-400">
+              <i data-lucide="cpu" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-bold text-white text-base">IoT & Hardware</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800/90 text-indigo-300 border border-slate-700/60">ESP32 (Espressif)</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800/90 text-indigo-300 border border-slate-700/60">Sensor DS18B20</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800/90 text-indigo-300 border border-slate-700/60">Sensor DHT22</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800/90 text-indigo-300 border border-slate-700/60">Telemetria Real-Time</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800/90 text-indigo-300 border border-slate-700/60">Protocolos HTTP/JSON</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800/90 text-indigo-300 border border-slate-700/60">Cadeia de Frio</span>
+          </div>
+        </div>
+
+        <!-- Categoria 4: DevOps & Ferramentas -->
+        <div class="glass-panel p-6 rounded-2xl border border-slate-800 space-y-4">
+          <div class="flex items-center gap-3 pb-3 border-b border-slate-800/80">
+            <div class="p-2 rounded-lg bg-amber-500/10 text-amber-400">
+              <i data-lucide="wrench" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-bold text-white text-base">DevOps & Ferramentas</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800/90 text-amber-300 border border-slate-700/60">Docker & Compose</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800/90 text-amber-300 border border-slate-700/60">Git & GitHub</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800/90 text-amber-300 border border-slate-700/60">Linux (Ubuntu CLI)</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800/90 text-amber-300 border border-slate-700/60">Extensões Web (JS)</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800/90 text-amber-300 border border-slate-700/60">Metodologias Ágeis</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800/90 text-amber-300 border border-slate-700/60">Vercel Deploy</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- PROJETOS EM DESTAQUE (ESTRUTURA STAR: PROBLEMA, SOLUÇÃO, STACK)          -->
+  <!-- ========================================================================= -->
+  <section id="projetos" class="py-20 border-t border-slate-800/80 bg-slate-950/40 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+        <span class="text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold block">Portfólio de Engenharia</span>
+        <h2 class="text-3xl font-extrabold text-white tracking-tight">
+          Projetos Técnicos em Destaque
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base">
+          Sistemas completos arquitetados com foco em integridade, escalabilidade e aplicação prática no mundo real.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="flex flex-wrap items-center justify-center gap-2 mb-12">
+        <button class="filter-btn px-4 py-2 rounded-xl text-xs font-mono tracking-wider bg-sky-500 text-slate-950 font-semibold shadow-lg shadow-sky-500/20 transition-all border border-transparent" data-filter="all">
+          Todos os Projetos
+        </button>
+        <button class="filter-btn px-4 py-2 rounded-xl text-xs font-mono tracking-wider bg-slate-900/80 text-slate-400 hover:text-slate-200 border border-slate-800 transition-all" data-filter="iot">
+          IoT & Hardware
+        </button>
+        <button class="filter-btn px-4 py-2 rounded-xl text-xs font-mono tracking-wider bg-slate-900/80 text-slate-400 hover:text-slate-200 border border-slate-800 transition-all" data-filter="backend">
+          Backend & APIs
+        </button>
+        <button class="filter-btn px-4 py-2 rounded-xl text-xs font-mono tracking-wider bg-slate-900/80 text-slate-400 hover:text-slate-200 border border-slate-800 transition-all" data-filter="dados">
+          Dados & Machine Learning
+        </button>
+        <button class="filter-btn px-4 py-2 rounded-xl text-xs font-mono tracking-wider bg-slate-900/80 text-slate-400 hover:text-slate-200 border border-slate-800 transition-all" data-filter="web">
+          Full Stack & Web
+        </button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- PROJETO 1: SISTEMA IOT ESP32 (DESTAQUE MÁXIMO) -->
+        <article class="project-card flex flex-col glass-panel rounded-2xl border border-slate-800 overflow-hidden group hover:border-sky-500/40 transition-all duration-300" data-category="iot backend">
+          <!-- Image Container -->
+          <div class="relative h-52 bg-slate-900 overflow-hidden">
+            <img src="iot-esp32.jpeg" alt="Sistema IoT ESP32" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+            <div class="absolute top-3 left-3 flex gap-2">
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-mono font-semibold bg-sky-500/20 text-sky-400 border border-sky-500/30 backdrop-blur-md">
+                IoT & Hardware
+              </span>
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-mono font-semibold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 backdrop-blur-md">
+                Engenharia UNIVESP
+              </span>
+            </div>
+          </div>
+
+          <!-- Card Content -->
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div class="space-y-3">
+              <h3 class="text-lg font-bold text-white group-hover:text-sky-400 transition-colors">
+                Sistema IoT de Telemetria e Monitoramento Térmico para Cadeia de Frio
+              </h3>
+              
+              <!-- Problema / Solução -->
+              <div class="space-y-2 text-xs text-slate-300 leading-relaxed">
+                <p>
+                  <strong class="text-slate-200 font-semibold block text-[11px] uppercase tracking-wider text-sky-400">Problema:</strong>
+                  Monitoramento contínuo de temperatura e umidade em salas de vacina hospitalares para eliminar perdas de imunobiológicos por oscilação térmica desregulada.
+                </p>
+                <p>
+                  <strong class="text-slate-200 font-semibold block text-[11px] uppercase tracking-wider text-emerald-400">Solução & Arquitetura:</strong>
+                  Firmware em ESP32 com sensoriamento de dupla precisão (DS18B20 para conservadoras e DHT22 para ambiente). Disparo de telemetria HTTP/JSON autenticada via API Key para API PHP/MySQL com dashboard e supervisão em tempo real.
+                </p>
+              </div>
+            </div>
+
+            <!-- Tech Stack Badges -->
+            <div class="space-y-4 pt-2 border-t border-slate-800/80">
+              <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">ESP32</span>
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">C/C++</span>
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">PHP REST API</span>
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">MySQL</span>
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">DS18B20</span>
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">DHT22</span>
+              </div>
+
+              <!-- Links -->
+              <div class="flex items-center justify-between pt-1">
+                <a href="https://github.com/marcelosviana" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-mono text-sky-400 hover:text-sky-300">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  <span>Código & Docs</span>
+                </a>
+                <span class="text-[11px] font-mono text-slate-500">Produção / UNIVESP</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJETO 2: MOTOR DE VOTAÇÃO & TRANSAÇÕES ACID (GO TECH) -->
+        <article class="project-card flex flex-col glass-panel rounded-2xl border border-slate-800 overflow-hidden group hover:border-sky-500/40 transition-all duration-300" data-category="backend web">
+          <!-- Image Container -->
+          <div class="relative h-52 bg-slate-900 overflow-hidden">
+            <img src="port.png" alt="Motor Transacional de Votação" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+            <div class="absolute top-3 left-3 flex gap-2">
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-mono font-semibold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 backdrop-blur-md">
+                Experiência Real (GO Tech)
+              </span>
+            </div>
+          </div>
+
+          <!-- Card Content -->
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div class="space-y-3">
+              <h3 class="text-lg font-bold text-white group-hover:text-sky-400 transition-colors">
+                Motor Transacional de Votação & Sistema de Fidelidade em Alta Concorrência
+              </h3>
+              
+              <!-- Problema / Solução -->
+              <div class="space-y-2 text-xs text-slate-300 leading-relaxed">
+                <p>
+                  <strong class="text-slate-200 font-semibold block text-[11px] uppercase tracking-wider text-sky-400">Problema:</strong>
+                  Garantir consistência na contagem de votos simultâneos em plataforma web, eliminando duplicidade, fraudes e gargalos de latência.
+                </p>
+                <p>
+                  <strong class="text-slate-200 font-semibold block text-[11px] uppercase tracking-wider text-emerald-400">Solução & Arquitetura:</strong>
+                  Modelagem relacional em MySQL com travas transacionais ACID e regras de unicidade. Autenticação <em>stateless</em> por tokens criptográficos com expiração rígida de 5 min (-90% de riscos de segurança e +45% no engajamento).
+                </p>
+              </div>
+            </div>
+
+            <!-- Tech Stack Badges -->
+            <div class="space-y-4 pt-2 border-t border-slate-800/80">
+              <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">PHP 8</span>
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">MySQL (Transações)</span>
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">Tokens Stateless</span>
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">JavaScript</span>
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">Kanban</span>
+              </div>
+
+              <!-- Links -->
+              <div class="flex items-center justify-between pt-1">
+                <span class="text-xs font-mono text-emerald-400 flex items-center gap-1">
+                  <i data-lucide="check-circle" class="w-3.5 h-3.5"></i>
+                  <span>Ambiente de Produção</span>
+                </span>
+                <span class="text-[11px] font-mono text-slate-500">+45% Engajamento</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJETO 3: MACHINE LEARNING & CLUSTERIZAÇÃO RFV -->
+        <article class="project-card flex flex-col glass-panel rounded-2xl border border-slate-800 overflow-hidden group hover:border-sky-500/40 transition-all duration-300" data-category="dados">
+          <!-- Image Container -->
+          <div class="relative h-52 bg-slate-900 overflow-hidden">
+            <img src="analise-dados.png" alt="Machine Learning RFV" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+            <div class="absolute top-3 left-3 flex gap-2">
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-mono font-semibold bg-indigo-500/20 text-indigo-400 border border-indigo-500/30 backdrop-blur-md">
+                Machine Learning
+              </span>
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-mono font-semibold bg-slate-800/80 text-slate-300 border border-slate-700/50 backdrop-blur-md">
+                Python / Scikit-Learn
+              </span>
+            </div>
+          </div>
+
+          <!-- Card Content -->
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div class="space-y-3">
+              <h3 class="text-lg font-bold text-white group-hover:text-sky-400 transition-colors">
+                Sistema Inteligente de Segmentação de Clientes com Machine Learning
+              </h3>
+              
+              <!-- Problema / Solução -->
+              <div class="space-y-2 text-xs text-slate-300 leading-relaxed">
+                <p>
+                  <strong class="text-slate-200 font-semibold block text-[11px] uppercase tracking-wider text-sky-400">Problema:</strong>
+                  Identificação automatizada e assertiva do perfil de compra em bases de clientes para orientar decisões de marketing e retenção.
+                </p>
+                <p>
+                  <strong class="text-slate-200 font-semibold block text-[11px] uppercase tracking-wider text-emerald-400">Solução & Arquitetura:</strong>
+                  Pipeline de dados com métricas RFV (Recência, Frequência, Valor). Padronização via StandardScaler e clusterização não-supervisionada via K-Means, utilizando o Método do Cotovelo para definição matemática do K ótimo.
+                </p>
+              </div>
+            </div>
+
+            <!-- Tech Stack Badges -->
+            <div class="space-y-4 pt-2 border-t border-slate-800/80">
+              <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">Python</span>
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">Scikit-Learn</span>
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">K-Means</span>
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">Pandas</span>
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">Matplotlib</span>
+              </div>
+
+              <!-- Links -->
+              <div class="flex items-center justify-between pt-1">
+                <a href="https://github.com/marcelosviana" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-mono text-sky-400 hover:text-sky-300">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  <span>Ver Script & Modelo</span>
+                </a>
+                <span class="text-[11px] font-mono text-slate-500">Engenharia de Dados</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJETO 4: TELEMETRIA EM TEMPO REAL ESPORTS (TCC) -->
+        <article class="project-card flex flex-col glass-panel rounded-2xl border border-slate-800 overflow-hidden group hover:border-sky-500/40 transition-all duration-300" data-category="backend web">
+          <!-- Image Container -->
+          <div class="relative h-52 bg-slate-900 overflow-hidden">
+            <img src="bancodigital.png" alt="Telemetria Esports TCC" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+            <div class="absolute top-3 left-3 flex gap-2">
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-mono font-semibold bg-sky-500/20 text-sky-400 border border-sky-500/30 backdrop-blur-md">
+                TCC Engenharia
+              </span>
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-mono font-semibold bg-slate-800/80 text-slate-300 border border-slate-700/50 backdrop-blur-md">
+                Node.js & SQLite
+              </span>
+            </div>
+          </div>
+
+          <!-- Card Content -->
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div class="space-y-3">
+              <h3 class="text-lg font-bold text-white group-hover:text-sky-400 transition-colors">
+                API de Telemetria Fisiológica e Eventos em Tempo Real para Esports
+              </h3>
+              
+              <!-- Problema / Solução -->
+              <div class="space-y-2 text-xs text-slate-300 leading-relaxed">
+                <p>
+                  <strong class="text-slate-200 font-semibold block text-[11px] uppercase tracking-wider text-sky-400">Problema:</strong>
+                  Ingestão e análise em tempo real do estresse fisiológico (BPM) de competidores correlacionada a momentos decisivos de jogo.
+                </p>
+                <p>
+                  <strong class="text-slate-200 font-semibold block text-[11px] uppercase tracking-wider text-emerald-400">Solução & Arquitetura:</strong>
+                  Serviço backend em Node.js/Express integrado a SQLite. Endpoints REST com suporte a CORS para ingestão em lote de telemetria e alimentação de dashboards de streaming analítico.
+                </p>
+              </div>
+            </div>
+
+            <!-- Tech Stack Badges -->
+            <div class="space-y-4 pt-2 border-t border-slate-800/80">
+              <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">Node.js</span>
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">Express</span>
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">SQLite3</span>
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">REST API</span>
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">CORS</span>
+              </div>
+
+              <!-- Links -->
+              <div class="flex items-center justify-between pt-1">
+                <a href="https://github.com/marcelosviana" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-mono text-sky-400 hover:text-sky-300">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  <span>Repositório</span>
+                </a>
+                <span class="text-[11px] font-mono text-slate-500">Streaming & Telemetria</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJETO 5: SIMULADOR DE BANCO DIGITAL POO (JAVA) -->
+        <article class="project-card flex flex-col glass-panel rounded-2xl border border-slate-800 overflow-hidden group hover:border-sky-500/40 transition-all duration-300" data-category="backend">
+          <!-- Image Container -->
+          <div class="relative h-52 bg-slate-900 overflow-hidden">
+            <img src="bancodigital.png" alt="Banco Digital Java" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+            <div class="absolute top-3 left-3 flex gap-2">
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-mono font-semibold bg-amber-500/20 text-amber-400 border border-amber-500/30 backdrop-blur-md">
+                Java & POO Avançada
+              </span>
+            </div>
+          </div>
+
+          <!-- Card Content -->
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div class="space-y-3">
+              <h3 class="text-lg font-bold text-white group-hover:text-sky-400 transition-colors">
+                Simulador de Banco Digital & Arquitetura Orientada a Objetos
+              </h3>
+              
+              <!-- Problema / Solução -->
+              <div class="space-y-2 text-xs text-slate-300 leading-relaxed">
+                <p>
+                  <strong class="text-slate-200 font-semibold block text-[11px] uppercase tracking-wider text-sky-400">Problema:</strong>
+                  Modelar regras de negócio financeiras complexas (limite dinâmico, saques, transferências e taxas) com alta coesão e baixo acoplamento.
+                </p>
+                <p>
+                  <strong class="text-slate-200 font-semibold block text-[11px] uppercase tracking-wider text-emerald-400">Solução & Arquitetura:</strong>
+                  Aplicação estrita dos 4 pilares de POO (Encapsulamento, Herança, Polimorfismo e Abstração). Segregação de responsabilidades via Interfaces Java e manipulação de coleções via Java Collections API.
+                </p>
+              </div>
+            </div>
+
+            <!-- Tech Stack Badges -->
+            <div class="space-y-4 pt-2 border-t border-slate-800/80">
+              <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">Java 17</span>
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">POO</span>
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">Interfaces</span>
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">Collections API</span>
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">JUnit</span>
+              </div>
+
+              <!-- Links -->
+              <div class="flex items-center justify-between pt-1">
+                <a href="https://github.com/marcelosviana/bootcamp-santander-backend-java/tree/main/lab_banco_digital" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-mono text-sky-400 hover:text-sky-300">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  <span>Ver no GitHub</span>
+                </a>
+                <span class="text-[11px] font-mono text-slate-500">Santander / DIO</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJETO 6: SINOPSE BUSCA INTERATIVA (ALURA) -->
+        <article class="project-card flex flex-col glass-panel rounded-2xl border border-slate-800 overflow-hidden group hover:border-sky-500/40 transition-all duration-300" data-category="web">
+          <!-- Image Container -->
+          <div class="relative h-52 bg-slate-900 overflow-hidden">
+            <img src="sinopse.png" alt="Sinopse Alura" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+            <div class="absolute top-3 left-3 flex gap-2">
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-mono font-semibold bg-sky-500/20 text-sky-400 border border-sky-500/30 backdrop-blur-md">
+                Frontend & Busca
+              </span>
+            </div>
+          </div>
+
+          <!-- Card Content -->
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div class="space-y-3">
+              <h3 class="text-lg font-bold text-white group-hover:text-sky-400 transition-colors">
+                Sinopse — Plataforma Interativa de Catálogo Cinematográfico
+              </h3>
+              
+              <!-- Problema / Solução -->
+              <div class="space-y-2 text-xs text-slate-300 leading-relaxed">
+                <p>
+                  <strong class="text-slate-200 font-semibold block text-[11px] uppercase tracking-wider text-sky-400">Problema:</strong>
+                  Filtragem ágil e responsiva de catálogo cinematográfico com busca instantânea sem sobrecarga de renderização.
+                </p>
+                <p>
+                  <strong class="text-slate-200 font-semibold block text-[11px] uppercase tracking-wider text-emerald-400">Solução & Arquitetura:</strong>
+                  Indexação client-side com algoritmo de busca em tempo real em JavaScript moderno (ES6+), manipulação limpa de DOM, acessibilidade e interface altamente responsiva.
+                </p>
+              </div>
+            </div>
+
+            <!-- Tech Stack Badges -->
+            <div class="space-y-4 pt-2 border-t border-slate-800/80">
+              <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">JavaScript ES6+</span>
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">DOM API</span>
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">HTML5 Semântico</span>
+                <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 border border-slate-700/50">CSS3 Moderno</span>
+              </div>
+
+              <!-- Links -->
+              <div class="flex items-center justify-between pt-1">
+                <a href="https://github.com/mviana836/Projeto-Alura" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-mono text-sky-400 hover:text-sky-300">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  <span>Ver no GitHub</span>
+                </a>
+                <span class="text-[11px] font-mono text-slate-500">Alura Imersão</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- EXPERIÊNCIA PROFISSIONAL & FORMAÇÃO ACADÊMICA                              -->
+  <!-- ========================================================================= -->
+  <section id="carreira" class="py-20 border-t border-slate-800/80 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <span class="text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold block">Trajetória Sênior</span>
+        <h2 class="text-3xl font-extrabold text-white tracking-tight">
+          Experiência Profissional & Formação Superior
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base">
+          Vivência prática com sistemas em produção aliada à formação acadêmica sólida em Engenharia de Computação.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        
+        <!-- Coluna 1: Experiência Profissional -->
+        <div class="space-y-8">
+          <div class="flex items-center gap-3 pb-3 border-b border-slate-800">
+            <div class="p-2.5 rounded-xl bg-sky-500/10 text-sky-400 border border-sky-500/20">
+              <i data-lucide="briefcase" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white">Experiência Profissional</h3>
+              <p class="text-xs font-mono text-slate-400">Atuação real no mercado e desenvolvimento</p>
+            </div>
+          </div>
+
+          <!-- Item 1: GO Tech -->
+          <div class="relative pl-6 border-l-2 border-sky-500/50 space-y-3">
+            <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-[#090d16] border-2 border-sky-400"></div>
+            
+            <div class="flex flex-wrap items-baseline justify-between gap-2">
+              <h4 class="text-base font-bold text-white">Desenvolvedor Full Stack Freelance</h4>
+              <span class="text-xs font-mono text-sky-400 bg-sky-500/10 px-2.5 py-0.5 rounded-full border border-sky-500/20">05/2025 – 09/2026</span>
+            </div>
+            
+            <div class="text-sm font-semibold text-slate-300">GO Tech (OIKAWA EMPREENDIMENTOS) • Remoto</div>
+            
+            <ul class="space-y-2 text-xs sm:text-sm text-slate-300 leading-relaxed list-disc list-outside pl-4">
+              <li>
+                <strong class="text-white">Motor de Votação & Concorrência ACID:</strong> Modelei o esquema de dados relacional em MySQL e programei no backend (PHP) motor de contagem de votos em tempo real com travas transacionais e regras de integridade, sustentando <strong class="text-emerald-400">+45% de engajamento diário</strong> sem aumento de latência.
+              </li>
+              <li>
+                <strong class="text-white">Arquitetura de Segurança Stateless:</strong> Projetei fluxo de autenticação e recuperação de credenciais com tokens temporários criptográficos (expiração de 5 min), blindando rotas contra <em>session hijacking</em> e reduzindo em <strong class="text-emerald-400">90% os riscos</strong> de acessos indevidos.
+              </li>
+              <li>
+                <strong class="text-white">Processos Ágeis & Governança:</strong> Fluxo contínuo com Git/GitHub sob Kanban, entregas iterativas e otimização responsiva de interfaces.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Item 2: Fenix Reborn -->
+          <div class="relative pl-6 border-l-2 border-slate-700 space-y-3">
+            <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-[#090d16] border-2 border-slate-500"></div>
+            
+            <div class="flex flex-wrap items-baseline justify-between gap-2">
+              <h4 class="text-base font-bold text-white">Estagiário de Desenvolvimento Backend</h4>
+              <span class="text-xs font-mono text-slate-400 bg-slate-800/80 px-2.5 py-0.5 rounded-full border border-slate-700">11/2024 – 02/2025</span>
+            </div>
+            
+            <div class="text-sm font-semibold text-slate-300">Fenix Reborn • Remoto</div>
+            
+            <ul class="space-y-2 text-xs sm:text-sm text-slate-300 leading-relaxed list-disc list-outside pl-4">
+              <li>
+                <strong class="text-white">Automação Web & Extensões:</strong> Desenvolvi extensões customizadas em JavaScript assíncrono para extração e preenchimento de dados em fluxos operacionais, gerando <strong class="text-emerald-400">ganho de 40% na produtividade</strong> e eliminação de falhas manuais.
+              </li>
+              <li>
+                <strong class="text-white">Garantia de Qualidade & Testes:</strong> Scripts de automação de testes focados em manipulação de DOM e compatibilidade cross-browser, atingindo <strong class="text-emerald-400">redução de 25% de bugs</strong> em staging.
+              </li>
+              <li>
+                <strong class="text-white">Rituais Scrum:</strong> Mapeamento de tarefas e documentação técnica em equipe de engenharia.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Coluna 2: Formação Acadêmica de Nível Superior -->
+        <div class="space-y-8">
+          <div class="flex items-center gap-3 pb-3 border-b border-slate-800">
+            <div class="p-2.5 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+              <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white">Formação Acadêmica</h3>
+              <p class="text-xs font-mono text-slate-400">Ensino Superior Público de Excelência</p>
+            </div>
+          </div>
+
+          <!-- Graduação 1: Engenharia de Computação -->
+          <div class="glass-panel p-6 rounded-2xl border border-slate-800 space-y-3 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-24 h-24 bg-sky-500/5 rounded-bl-full pointer-events-none"></div>
+            
+            <div class="flex flex-wrap items-baseline justify-between gap-2">
+              <h4 class="text-base font-bold text-white">Bacharelado em Engenharia de Computação</h4>
+              <span class="text-xs font-mono text-sky-400 bg-sky-500/10 px-2.5 py-0.5 rounded-full border border-sky-500/20">Concluído em 08/2026</span>
+            </div>
+            
+            <div class="text-sm font-semibold text-sky-400">UNIVESP — Universidade Virtual do Estado de São Paulo</div>
+            
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Formação com ênfase no projeto e desenvolvimento de hardware e software integrados: Arquitetura de Computadores, Sistemas Operacionais, Banco de Dados, Algoritmos Avançados, Redes de Computadores, Microcontroladores e Governança de Software.
+            </p>
+          </div>
+
+          <!-- Graduação 2: Tecnólogo em TI com ênfase em IoT -->
+          <div class="glass-panel p-6 rounded-2xl border border-slate-800 space-y-3 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-24 h-24 bg-emerald-500/5 rounded-bl-full pointer-events-none"></div>
+            
+            <div class="flex flex-wrap items-baseline justify-between gap-2">
+              <h4 class="text-base font-bold text-white">Tecnólogo em Tecnologia da Informação (Ênfase em IoT)</h4>
+              <span class="text-xs font-mono text-sky-400 bg-sky-500/10 px-2.5 py-0.5 rounded-full border border-sky-500/20">Concluído em 07/2025</span>
+            </div>
+            
+            <div class="text-sm font-semibold text-emerald-400">UNIVESP — Universidade Virtual do Estado de São Paulo</div>
+            
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Especialização superior em Internet das Coisas (IoT), Redes de Sensores Sem Fio, Programação de Microcontroladores (ESP32/Arduino), Protocolos de Comunicação em Tempo Real, Persistência de Dados e Segurança da Informação.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- CERTIFICAÇÕES & CURSOS (LAYOUT LIMPO COM MODAL INTERATIVO)                 -->
+  <!-- ========================================================================= -->
+  <section id="certificacoes" class="py-20 border-t border-slate-800/80 bg-slate-950/40 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <span class="text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold block">Aperfeiçoamento Contínuo</span>
+        <h2 class="text-3xl font-extrabold text-white tracking-tight">
+          Certificações Técnicas & Especializações
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base">
+          Cursos e certificações que comprovam minha dedicação contínua à excelência técnica. Clique em qualquer card para ver a credencial.
+        </p>
+      </div>
+
+      <!-- Certifications Compact Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Cert 1: DIO Santander Java -->
+        <div class="glass-panel p-6 rounded-2xl border border-slate-800 flex flex-col justify-between hover:border-sky-500/40 transition-all group">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-mono text-sky-400 bg-sky-500/10 px-2 py-0.5 rounded border border-sky-500/20">87 Horas</span>
+              <span class="text-xs font-mono text-slate-400">2024</span>
+            </div>
+            <h3 class="text-base font-bold text-white group-hover:text-sky-400 transition-colors">
+              Santander Bootcamp 2024 - Backend com Java
+            </h3>
+            <p class="text-xs font-semibold text-slate-400">Digital Innovation One (DIO) & Santander</p>
+            <p class="text-xs text-slate-300 leading-relaxed line-clamp-3">
+              Imersão profunda em Java, APIs RESTful, Spring Boot, Programação Orientada a Objetos, Collections API e boas práticas de arquitetura.
+            </p>
+          </div>
+          <button class="open-cert-btn mt-5 inline-flex items-center gap-1.5 text-xs font-mono text-sky-400 hover:text-sky-300 self-start" data-cert="bootcamp-java">
+            <span>Ver Credencial & Detalhes</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+
+        <!-- Cert 2: Bradesco Banco de Dados -->
+        <div class="glass-panel p-6 rounded-2xl border border-slate-800 flex flex-col justify-between hover:border-emerald-500/40 transition-all group">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">38 Horas</span>
+              <span class="text-xs font-mono text-slate-400">2024</span>
+            </div>
+            <h3 class="text-base font-bold text-white group-hover:text-emerald-400 transition-colors">
+              Administração de Banco de Dados e Modelagem SQL
+            </h3>
+            <p class="text-xs font-semibold text-slate-400">Fundação Bradesco — Escola Virtual</p>
+            <p class="text-xs text-slate-300 leading-relaxed line-clamp-3">
+              Modelagem conceitual e lógica, normalização relacional, índices, integridade referencial e execução de consultas SQL avançadas.
+            </p>
+          </div>
+          <button class="open-cert-btn mt-5 inline-flex items-center gap-1.5 text-xs font-mono text-emerald-400 hover:text-emerald-300 self-start" data-cert="bradesco-bd">
+            <span>Ver Credencial & Detalhes</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+
+        <!-- Cert 3: Bradesco Python -->
+        <div class="glass-panel p-6 rounded-2xl border border-slate-800 flex flex-col justify-between hover:border-indigo-500/40 transition-all group">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-mono text-indigo-400 bg-indigo-500/10 px-2 py-0.5 rounded border border-indigo-500/20">53 Horas</span>
+              <span class="text-xs font-mono text-slate-400">2024</span>
+            </div>
+            <h3 class="text-base font-bold text-white group-hover:text-indigo-400 transition-colors">
+              Linguagem de Programação Python & POO
+            </h3>
+            <p class="text-xs font-semibold text-slate-400">Fundação Bradesco — Escola Virtual</p>
+            <p class="text-xs text-slate-300 leading-relaxed line-clamp-3">
+              Fundamentos de lógica de programação em Python, estruturas de dados, POO (abstração, encapsulamento, herança e polimorfismo).
+            </p>
+          </div>
+          <button class="open-cert-btn mt-5 inline-flex items-center gap-1.5 text-xs font-mono text-indigo-400 hover:text-indigo-300 self-start" data-cert="bradesco-python">
+            <span>Ver Credencial & Detalhes</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+
+        <!-- Cert 4: ENAP Análise de Dados -->
+        <div class="glass-panel p-6 rounded-2xl border border-slate-800 flex flex-col justify-between hover:border-sky-500/40 transition-all group">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-mono text-sky-400 bg-sky-500/10 px-2 py-0.5 rounded border border-sky-500/20">30 Horas</span>
+              <span class="text-xs font-mono text-slate-400">2024</span>
+            </div>
+            <h3 class="text-base font-bold text-white group-hover:text-sky-400 transition-colors">
+              Análise de Dados como Suporte à Tomada de Decisão
+            </h3>
+            <p class="text-xs font-semibold text-slate-400">ENAP — Escola Nacional de Administração Pública</p>
+            <p class="text-xs text-slate-300 leading-relaxed line-clamp-3">
+              Pré-processamento, higienização de grandes volumes de dados, análise descritiva, criação de KPIs e dashboards gerenciais de BI.
+            </p>
+          </div>
+          <button class="open-cert-btn mt-5 inline-flex items-center gap-1.5 text-xs font-mono text-sky-400 hover:text-sky-300 self-start" data-cert="enap-dados">
+            <span>Ver Credencial & Detalhes</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+
+        <!-- Cert 5: ENAP Liderança -->
+        <div class="glass-panel p-6 rounded-2xl border border-slate-800 flex flex-col justify-between hover:border-amber-500/40 transition-all group">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-mono text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20">30 Horas</span>
+              <span class="text-xs font-mono text-slate-400">2024</span>
+            </div>
+            <h3 class="text-base font-bold text-white group-hover:text-amber-400 transition-colors">
+              Liderança e Gestão Estratégica de Equipes
+            </h3>
+            <p class="text-xs font-semibold text-slate-400">ENAP — Escola Nacional de Administração Pública</p>
+            <p class="text-xs text-slate-300 leading-relaxed line-clamp-3">
+              Liderança situacional, comunicação interpessoal assertiva, gestão de conflitos, engajamento e clima organizacional em equipes ágeis.
+            </p>
+          </div>
+          <button class="open-cert-btn mt-5 inline-flex items-center gap-1.5 text-xs font-mono text-amber-400 hover:text-amber-300 self-start" data-cert="enap-lideranca">
+            <span>Ver Credencial & Detalhes</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+
+        <!-- Cert 6: IFRS HTML5 -->
+        <div class="glass-panel p-6 rounded-2xl border border-slate-800 flex flex-col justify-between hover:border-rose-500/40 transition-all group">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-mono text-rose-400 bg-rose-500/10 px-2 py-0.5 rounded border border-rose-500/20">30 Horas</span>
+              <span class="text-xs font-mono text-slate-400">2024</span>
+            </div>
+            <h3 class="text-base font-bold text-white group-hover:text-rose-400 transition-colors">
+              HTML5: Fundamentos para Construção de Páginas Web Modernas
+            </h3>
+            <p class="text-xs font-semibold text-slate-400">IFRS — Instituto Federal do Rio Grande do Sul</p>
+            <p class="text-xs text-slate-300 leading-relaxed line-clamp-3">
+              Padrões W3C, marcação semântica, formulários avançados, validações nativas e boas práticas para interfaces acessíveis.
+            </p>
+          </div>
+          <button class="open-cert-btn mt-5 inline-flex items-center gap-1.5 text-xs font-mono text-rose-400 hover:text-rose-300 self-start" data-cert="ifrs-html">
+            <span>Ver Credencial & Detalhes</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- CONTATO & FORMULÁRIO DIRETO                                               -->
+  <!-- ========================================================================= -->
+  <section id="contato" class="py-20 border-t border-slate-800/80 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <span class="text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold block">Canais Diretos</span>
+        <h2 class="text-3xl font-extrabold text-white tracking-tight">
+          Vamos Construir Soluções Juntos?
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base">
+          Estou disponível para contratações, projetos de engenharia backend e consultoria técnica em IoT. Envie uma mensagem direta ou entre em contato pelos canais abaixo.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Coluna Esquerda: Informações de Contato Rápidas -->
+        <div class="lg:col-span-5 space-y-4">
+          
+          <!-- Card WhatsApp -->
+          <a href="https://wa.me/5518981470269?text=Olá%20Marcelo,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar." target="_blank" class="glass-panel p-5 rounded-2xl border border-slate-800 flex items-center gap-4 hover:border-emerald-500/50 hover:bg-slate-900 transition-all group">
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
+              <i data-lucide="message-circle" class="w-6 h-6"></i>
+            </div>
+            <div class="flex-1">
+              <span class="text-xs font-mono text-slate-400 block">WhatsApp / Telefone</span>
+              <span class="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors">+55 (18) 98147-0269</span>
+            </div>
+            <i data-lucide="arrow-up-right" class="w-5 h-5 text-slate-500 group-hover:text-emerald-400 transition-colors"></i>
+          </a>
+
+          <!-- Card Email com botão de copiar -->
+          <div class="glass-panel p-5 rounded-2xl border border-slate-800 flex items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400">
+                <i data-lucide="mail" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <span class="text-xs font-mono text-slate-400 block">E-mail Profissional</span>
+                <a href="mailto:marceloviana836@gmail.com" class="text-sm font-bold text-white hover:text-sky-400 transition-colors">marceloviana836@gmail.com</a>
+              </div>
+            </div>
+            <button id="copy-email-btn" class="p-2 rounded-lg bg-slate-800 text-slate-400 hover:text-white border border-slate-700/60" title="Copiar e-mail">
+              <span id="copy-email-text" class="text-xs font-mono">Copiar</span>
+            </button>
+          </div>
+
+          <!-- Card LinkedIn -->
+          <a href="https://linkedin.com/in/marcelosilvaviana" target="_blank" rel="noopener noreferrer" class="glass-panel p-5 rounded-2xl border border-slate-800 flex items-center gap-4 hover:border-sky-500/50 hover:bg-slate-900 transition-all group">
+            <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-[#0a66c2] group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.6 1.6 0 0 0-1.6 1.6 1.6 1.6 0 0 0 1.6 1.6 1.6 1.6 0 0 0 1.6-1.6 1.6 1.6 0 0 0-1.6-1.6Z"/></svg>
+            </div>
+            <div class="flex-1">
+              <span class="text-xs font-mono text-slate-400 block">LinkedIn Profissional</span>
+              <span class="text-sm font-bold text-white group-hover:text-blue-400 transition-colors">linkedin.com/in/marcelosilvaviana</span>
+            </div>
+            <i data-lucide="arrow-up-right" class="w-5 h-5 text-slate-500 group-hover:text-blue-400 transition-colors"></i>
+          </a>
+
+          <!-- Card GitHub -->
+          <a href="https://github.com/marcelosviana" target="_blank" rel="noopener noreferrer" class="glass-panel p-5 rounded-2xl border border-slate-800 flex items-center gap-4 hover:border-purple-500/50 hover:bg-slate-900 transition-all group">
+            <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </div>
+            <div class="flex-1">
+              <span class="text-xs font-mono text-slate-400 block">GitHub Repositórios</span>
+              <span class="text-sm font-bold text-white group-hover:text-purple-400 transition-colors">github.com/marcelosviana</span>
+            </div>
+            <i data-lucide="arrow-up-right" class="w-5 h-5 text-slate-500 group-hover:text-purple-400 transition-colors"></i>
+          </a>
+
+          <!-- Localização -->
+          <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-center gap-3 text-xs text-slate-400 font-mono">
+            <i data-lucide="map-pin" class="w-4 h-4 text-sky-400"></i>
+            <span>Rosana, SP, Brasil • Disponível para trabalho remoto em todo o Brasil ou presencial/híbrido regional.</span>
+          </div>
+        </div>
+
+        <!-- Coluna Direita: Formulário de Mensagem Formspree -->
+        <div class="lg:col-span-7">
+          <div class="glass-panel p-8 rounded-2xl border border-slate-800">
+            <h3 class="text-lg font-bold text-white mb-2">Envie uma mensagem</h3>
+            <p class="text-xs text-slate-400 mb-6 font-mono">Respondo geralmente em menos de 24 horas.</p>
+
+            <form id="contact-form" action="https://formspree.io/f/manywzyp" method="POST" class="space-y-4">
+              <div>
+                <label for="name" class="block text-xs font-mono uppercase tracking-wider text-slate-300 mb-1.5">Seu Nome / Empresa</label>
+                <input type="text" id="name" name="name" required placeholder="Ex: Roberto Almeida / Empresa Tech" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:border-sky-400 focus:ring-1 focus:ring-sky-400 transition-all text-sm">
+              </div>
+
+              <div>
+                <label for="email" class="block text-xs font-mono uppercase tracking-wider text-slate-300 mb-1.5">Seu E-mail Corporativo ou Pessoal</label>
+                <input type="email" id="email" name="email" required placeholder="Ex: seuemail@dominio.com" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:border-sky-400 focus:ring-1 focus:ring-sky-400 transition-all text-sm">
+              </div>
+
+              <div>
+                <label for="message" class="block text-xs font-mono uppercase tracking-wider text-slate-300 mb-1.5">Mensagem / Proposta</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Conte um pouco sobre sua oportunidade, projeto ou desafio técnico..." class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:border-sky-400 focus:ring-1 focus:ring-sky-400 transition-all text-sm resize-none"></textarea>
+              </div>
+
+              <div id="form-status" class="pt-1"></div>
+
+              <button type="submit" class="w-full py-3.5 px-6 rounded-xl font-semibold text-slate-950 bg-sky-400 hover:bg-sky-300 shadow-lg shadow-sky-500/20 transition-all transform hover:-translate-y-0.5 text-sm uppercase tracking-wider flex items-center justify-center gap-2">
+                <i data-lucide="send" class="w-4 h-4"></i>
+                <span>Enviar Mensagem</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- MODAL DE CERTIFICAÇÃO (INTERATIVO)                                        -->
+  <!-- ========================================================================= -->
+  <div id="cert-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4">
+    <!-- Backdrop Overlay -->
+    <div id="cert-modal-overlay" class="fixed inset-0 bg-slate-950/85 backdrop-blur-md"></div>
     
-        // Verifica se a página atual é a inicial (index.html ou outra)
-        if (currentPage !== '/index.html' && currentPage !== '/') {
-            // Exibe o botão de Home se não estiver na página inicial
-            document.getElementById('homeButton').style.display = 'inline-block';
-        }
-    </script>
-      <script src="particles.js"></script> <!-- Seu Particles.js aqui -->
+    <!-- Modal Card -->
+    <div class="relative w-full max-w-2xl bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl overflow-hidden z-10 flex flex-col max-h-[90vh]">
+      <!-- Modal Header -->
+      <div class="p-6 border-b border-slate-800 flex items-start justify-between gap-4">
+        <div>
+          <span id="cert-modal-badge" class="px-2.5 py-0.5 rounded text-[11px] font-mono font-medium bg-sky-500/10 text-sky-400 border border-sky-500/20 mb-2 inline-block">
+            Certificação
+          </span>
+          <h3 id="cert-modal-title" class="text-xl font-bold text-white leading-tight"></h3>
+          <p id="cert-modal-institution" class="text-xs font-mono text-slate-400 mt-1"></p>
+        </div>
+        <button id="cert-modal-close" class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors" aria-label="Fechar modal">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
 
+      <!-- Modal Body (Scrollable) -->
+      <div class="p-6 overflow-y-auto space-y-5">
+        <!-- Certificate Image Preview -->
+        <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-950 max-h-72 flex items-center justify-center">
+          <img id="cert-modal-img" src="" alt="Certificado" class="w-full h-auto object-contain max-h-72">
+        </div>
 
+        <!-- Description & Details -->
+        <div class="space-y-2">
+          <div class="flex items-center gap-2 text-xs font-mono text-emerald-400">
+            <i data-lucide="clock" class="w-4 h-4"></i>
+            <span id="cert-modal-hours"></span>
+          </div>
+          <p id="cert-modal-desc" class="text-sm text-slate-300 leading-relaxed"></p>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="p-4 border-t border-slate-800 bg-slate-950/60 flex justify-end">
+        <button onclick="document.getElementById('cert-modal').classList.add('hidden'); document.body.classList.remove('overflow-hidden');" class="px-4 py-2 rounded-lg text-xs font-mono bg-slate-800 text-slate-300 hover:text-white border border-slate-700">
+          Fechar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- RODAPÉ                                                                    -->
+  <!-- ========================================================================= -->
+  <footer class="py-12 border-t border-slate-800/80 bg-[#070b12] text-slate-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <!-- Logo & Copyright -->
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 flex items-center justify-center p-1 rounded-lg bg-slate-900/40 border border-slate-800">
+          <img src="MV.png" alt="MV Logo" class="w-full h-full object-contain">
+        </div>
+        <div>
+          <span class="text-white font-semibold block text-sm">Marcelo da Silva Viana</span>
+          <span class="text-[11px] font-mono text-slate-500">Engenheiro de Computação & Backend Developer</span>
+        </div>
+      </div>
+
+      <!-- Nav Links -->
+      <div class="flex flex-wrap justify-center gap-6 text-slate-400">
+        <a href="#hero" class="hover:text-sky-400 transition-colors">Início</a>
+        <a href="#sobre" class="hover:text-sky-400 transition-colors">Sobre</a>
+        <a href="#stack" class="hover:text-sky-400 transition-colors">Stack</a>
+        <a href="#projetos" class="hover:text-sky-400 transition-colors">Projetos</a>
+        <a href="#carreira" class="hover:text-sky-400 transition-colors">Carreira</a>
+        <a href="#certificacoes" class="hover:text-sky-400 transition-colors">Certificações</a>
+        <a href="#contato" class="hover:text-sky-400 transition-colors">Contato</a>
+      </div>
+
+      <!-- Social Links & Back to Top -->
+      <div class="flex items-center gap-4">
+        <a href="https://github.com/marcelosviana" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-900 transition-colors" title="GitHub de Marcelo Viana" aria-label="GitHub">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/marcelosilvaviana" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg text-slate-400 hover:text-sky-400 hover:bg-slate-900 transition-colors" title="LinkedIn de Marcelo Viana" aria-label="LinkedIn">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.6 1.6 0 0 0-1.6 1.6 1.6 1.6 0 0 0 1.6 1.6 1.6 1.6 0 0 0 1.6-1.6 1.6 1.6 0 0 0-1.6-1.6Z"/></svg>
+        </a>
+        <a href="https://wa.me/5518981470269" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg text-slate-400 hover:text-emerald-400 hover:bg-slate-900 transition-colors" title="WhatsApp" aria-label="WhatsApp">
+          <i class="fa-brands fa-whatsapp text-base"></i>
+        </a>
+        <a href="#hero" class="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-sky-400 hover:border-slate-700 transition-colors" title="Voltar ao topo">
+          <i data-lucide="arrow-up" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 pt-6 border-t border-slate-800/40 text-center font-mono text-[11px] text-slate-500">
+      © 2026 Marcelo da Silva Viana. Todos os direitos reservados. Projetado com HTML5 Semântico, Tailwind CSS & JavaScript Puro.
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts.js"></script>
 </body>
-
 </html>

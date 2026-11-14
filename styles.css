@@ -1,667 +1,84 @@
-/* Estilos básicos que você já tem */
+/* ==========================================================================
+   Marcelo da Silva Viana - Portfolio Stylesheet (Custom Utilities & Glows)
+   ========================================================================== */
 
-* {
-
-    margin: 0;
-
-    padding: 0;
-
-    box-sizing: border-box;
-
-  
-}
-
-
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    text-align: justify;
-
-}
-
-#page-content {
-    display: flex;
-    flex-direction: column;
-    min-height: 98vh;
-}
-
-main {
-    flex: 1;
-}
-
-footer {
-    height: 90px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-}
-
-.main-container {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    position: relative; /* Posiciona o container como relativo */
-    z-index: 1; /* Garante que o conteúdo fique acima das partículas */
-}
-
-
-
-body {
-
-    font-family: Arial, sans-serif;
-
-    background-color: #f4f4f4;
-
-    color: #333;
-
-    line-height: 1.5;
-
-    display: flex;
-
-    flex-direction: column;
-
-    min-height: 100vh;
-        margin: 0;
-        height: 100vh; /* Permite que o corpo ocupe toda a altura da viewport */
-        overflow-y:0; /* Habilita a rolagem vertical */
-       
-}
-      
-.container {
-    
-    min-height: 100vh; /* Garante que o container tenha pelo menos a altura da viewport */
-}
-
-
-
-main {
-
-    flex: 1;
-    min-height: 98vh;
-
-}
-
-
-
-/* Estilo para o cabeçalho e navegação */
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 5px 0;
-    width: 100%; /* Garantir que o cabeçalho ocupe toda a largura */
-    box-sizing: border-box; /* Incluir o padding dentro da largura total */
-}
-
-
-nav ul {
-    list-style: none;
-    text-align: center;
-    display: flex; /* Usar flexbox para os itens da lista */
-    justify-content: flex-start; /* Alinha os links à esquerda */
-    padding-left: 20px; /* Ajusta o espaçamento da esquerda */
-    flex-wrap: nowrap; /* Impede que os itens quebrem para a linha seguinte */
-    margin: 15px; /* Espaçamento entre os itens */
-}
-
-nav ul li {
-    margin: 0 10px; /* Espaçamento entre os itens */
-}
-
-nav ul li a {
-
-    color: #fff;
-
-    text-decoration: none;
-
-    font-size: 1.2em;
-
-}
-
-
-
-nav ul li a.active {
-
-    font-weight: bold;
-
-    border-bottom: 2px solid #fff; /* Destacar aba ativa */
-
-}
-
-
-
-/* Estilo das seções */
-
-section {
-
-    padding: 80px;
-
-    margin: 10px 0;
-
-}
-
-
-
-/* Rodapé */
-
-footer {
-
-    position: fixed; 
-
-    text-align: center;
-
-    padding: 5px;
-
-    background: #333;
-
-    color: #fff;
-
-    margin: top 20%;
-
-    padding-top: 20%;
-
-    margin: 0;
-
-    padding: 1%;
-
-    bottom: 0;
-
-    width: 100%;
-
-}
-
-
-
-.social-links a {
-
-    color: #fff;
-
-    margin: 0 10px;
-
-    font-size: 1.5em;
-
-    transition: color 0.3s ease;
-
-}
-
-
-
-.social-links a:hover {
-
-    color: #f7f8f8;
-
-}
-
-
-
-/* Estilo para controlar a exibição das abas */
-
-.tab-content {
-
-    display: none; /* Todas as abas começam ocultas */
-
-}
-
-
-
-.tab-content.active {
-
-    display: block; /* Exibir apenas a aba ativa */
-
-}
-
-#particles-js {
-
-    position: fixed;
-
-    width: 100%;
-
-    height: 100%;
-
-    z-index: -1; /* Para ficar atrás do conteúdo */
-
-    top: 0;
-
-    left: 0;
-
-    background-color: #222; /* Cor do fundo atrás das partículas */
-
-  }
-
-  .about-container {
-
-    position: relative;
-
-    text-align: left; /* Alinhamento do texto, ajustável */
-
-    color: white;
-
-    padding-bottom: 10px; /* Espaço extra no final da seção */
-
-    min-height: 750px; /* Altura mínima da seção */
-
-}
-
-
-
-.about-photo {
-
-    width: 450px; /* Ajuste o tamanho da foto */
-
-    height: auto;
-
-    position: absolute;
-
-    bottom: 0; /* Fixa a imagem no rodapé da seção */
-
-    right: 150px; /* Posiciona a imagem à direita */
-
-    object-fit: cover; /* Garante que a proporção da imagem seja mantida */
-
-    opacity: 1; /* Defina a opacidade da imagem */
-
-    z-index: 0; /* A imagem estará acima do rodapé, mas não sobreposta ao texto */
-
-}
-
-.about-container {
-
-    padding-bottom: 50px; /* Isso garante que a imagem tenha espaço */
-
-}
-
-
-
-#courses {
-
-    color: #fff; /* Define a cor do texto como branco */
-
-}
-
-
-
-#courses  h2, #courses  p {
-
-    color: #fff;
-
-}
-
-#contact {
-
-    color: #fff; /* Define a cor do texto como branco */
-
-}
-
-#contact h2, #contact label, #contact input, #contact textarea {
-
-    color: #fff;
-
-}
-
-#courses p {
-
-    text-align: justify; /* Alinha o texto à esquerda */
-
-    width: 90%; /* O texto ocupará 50% da largura da página */
-
-    margin: 1 auto; /* Centraliza o parágrafo horizontalmente */
-
-    margin-bottom: 10px;
-
-}
-
-
-
-#courses img {
-
-    width: 50%; /* O parágrafo ocupa metade da página */
-
-    
-
-}
-
-.course {
-
-    display: flex;
-
-    align-items: flex-start; /* Alinha o texto e a imagem ao topo */
-
-    justify-content: space-evenly; /* Espaço entre o texto e a imagem */
-
-    margin-bottom: 50px; /* Espaço entre as divs de curso */
-
-    flex-wrap: nowrap; /* Impede que os elementos quebrem de linha */
-
-}
-
-
-
-.course-text {
-
-    width: 70%; /* O texto vai ocupar 55% do espaço */
-
-    padding-right: 13px; /* Espaçamento entre o texto e a imagem */
-
-    text-align: justify;
-
-    margin-bottom: 20px;
-}
-
-
-
-.course-image {
-
-    width: 110%; /* Define a largura da imagem */
-
-    max-width: 900px; /* Limita o tamanho máximo da imagem */
-
-}
-
-
-
-.course-image img {
-
-    width: 100%; /* Garante que a imagem preencha o espaço da div */
-
-    height: auto; /* Mantém a proporção da imagem */
-
-    border-radius: 10px; /* Adiciona bordas arredondadas */
-
-}
-.courses-section {
-    display: flex;
-    flex-direction: column;
-    gap: 100px; /* Espaçamento entre os blocos */
-    margin: 1 auto;
-    padding: 90px;
-    max-width: 1200px; /* Ajuste o tamanho máximo da seção */
-}
-
-.course-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.course-content {
-    flex: 1;
-    margin-right: 20px;
-    color: #ffffff;
-}
-
-.course-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.course-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Estilo para inverter a ordem nos itens com classe 'reverse' */
-.course-item.reverse {
-    flex-direction: row-reverse;
-}
-
-.course-item.reverse .course-content {
-    margin-right: 0;
-    margin-left: 20px;
+/* Custom smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
-.course-item:last-child {
-    margin-bottom: 0; /* Remove margens extras no último item */
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
 }
-.course-item:last-child {
-    margin-bottom: 0;
-}
-
-#projects {
-
-    color: #fff; /* Define a cor do texto como branco */
-
-}
-
-#projects  h2, #projects  p {
-
-    color: #fff;
-
-}
-
-#contact {
-
-    color: #fff; /* Define a cor do texto como branco */
-
-}
-
-#contact h2, #contact label, #contact input, #contact textarea {
-
-    color: #fff;
-
-}
-
-#projects p {
-
-    text-align: justify; /* Alinha o texto à esquerda */
-
-    width: 90%; /* O texto ocupará 50% da largura da página */
-
-    margin: 1 auto; /* Centraliza o parágrafo horizontalmente */
-
-    margin-bottom: 10px;
-
-}
-
-#projects img {
-
-    width: 50%; /* O parágrafo ocupa metade da página */
-}
-
-.project {
-
-    display: flex;
-
-    align-items: flex-start; /* Alinha o texto e a imagem ao topo */
-
-    justify-content: space-evenly; /* Espaço entre o texto e a imagem */
-
-    margin-bottom: 50px; /* Espaço entre as divs de projeto */
-
-    flex-wrap: nowrap; /* Impede que os elementos quebrem de linha */
-
-}
-
-.project-text {
-
-    width: 70%; /* O texto vai ocupar 55% do espaço */
 
-    padding-right: 13px; /* Espaçamento entre o texto e a imagem */
-
-    text-align: justify;
-
-    margin-bottom: 20px;
-}
-
-.project-image {
-
-    width: 110%; /* Define a largura da imagem */
-
-    max-width: 900px; /* Limita o tamanho máximo da imagem */
-
-}
-
-.project-image img {
-
-    width: 100%; /* Garante que a imagem preencha o espaço da div */
-
-    height: auto; /* Mantém a proporção da imagem */
-
-    border-radius: 10px; /* Adiciona bordas arredondadas */
-
-}
-
-.projects-section {
-    display: flex;
-    flex-direction: column;
-    gap: 100px; /* Espaçamento entre os blocos */
-    margin: 1 auto;
-    padding: 90px;
-    max-width: 1200px; /* Ajuste o tamanho máximo da seção */
-}
-
-.project-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.project-content {
-    flex: 1;
-    margin-right: 20px;
-    color: #ffffff;
-}
-
-.project-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.project-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Estilo para inverter a ordem nos itens com classe 'reverse' */
-.project-item.reverse {
-    flex-direction: row-reverse;
-}
-
-.project-item.reverse .project-content {
-    margin-right: 0;
-    margin-left: 20px;
+::-webkit-scrollbar-track {
+  background: #090d16;
 }
 
-.project-item:last-child {
-    margin-bottom: 0; /* Remove margens extras no último item */
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
 }
-.project-item:last-child {
-    margin-bottom: 0;
-}
-
-body {
-    height: auto;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-}
 
-.main-container {
-    margin-bottom: 0;
-    padding-bottom: 0;
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
 }
-.home-button {
-    display: block; /* Faz o botão ocupar toda a largura disponível */
-    width: fit-content; /* Faz o botão ter a largura do conteúdo */
-    margin: 5px auto; /* Centraliza o botão horizontalmente */
-    padding: 10px 20px; /* Ajuste o padding conforme necessário */
-    background-color: #4a5057; /* Cor do fundo */
-    color: white; /* Cor do texto */
-    text-decoration: none; /* Remove sublinhado */
-    border-radius: 5px; /* Bordas arredondadas */
-    transition: background-color 0.3s; /* Transição suave para hover */
-    margin-right: 500px; /* Adiciona espaço à direita do botão */
-}
 
-.home-button:hover {
-    background-color: #27292b; /* Cor ao passar o mouse */
-}
-/* Estilos básicos */
-/* Supondo que o título esteja dentro de um elemento com a classe "titulo" */
-.titulo {
-    text-align: center;
-    margin-top: 20px; /* Ajustar a margem superior conforme necessário */
-    margin-bottom: 20px; /* Ajustar a margem inferior conforme necessário */
+/* Ambient Radial Background Glows */
+.ambient-glow-1 {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.12) 0%, rgba(99, 102, 241, 0.06) 40%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
 }
-body {
-    font-family: Arial, sans-serif;
-    background-color: #222;
-    color: #fff;
-}
 
-form {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #333;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+.ambient-glow-2 {
+  position: absolute;
+  top: 40%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.08) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
 }
 
-.form-group {
-    margin-bottom: 15px;
+/* Card glass effect */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
+.glass-panel:hover {
+  border-color: rgba(56, 189, 248, 0.25);
 }
 
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-bottom: 2px solid #555;
-    background-color: #333;
-    color: #fff;
+.glass-nav {
+  background: rgba(9, 13, 22, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-button {
-    background-color: #818a95;
-    color: #0d0c0c;
-    padding: 20px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-button:hover {
-    background-color: #eceeef; /* Cor ao passar o mouse */
+/* Modal transition utilities */
+.modal-overlay {
+  transition: opacity 0.25s ease-in-out, visibility 0.25s ease-in-out;
 }
-/* Estilos para telas menores (celulares) */
-@media (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-    .container {
-        padding: 10px;
-    }
-    /* Outros ajustes específicos */
-}
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column; /* Coloca os itens em uma coluna para telas menores */
-        align-items: center; /* Centraliza os itens */
-    }
 
-    nav ul li {
-        margin-bottom: 10px; /* Adiciona espaçamento entre os itens em tela pequena */
- 
-    }
-
-}
-a {
-    color: hsla(0, 0%, 100%, 0.945); /* Substitua este código com a cor verde desejada */
-    text-decoration: none; /* Opcional: remove o sublinhado */
+.modal-content {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease-in-out;
 }
 
-a:hover {
-    color: #535553; /* Cor quando o link for passado com o mouse */
+/* Code badge font helper */
+.font-mono-tag {
+  font-family: 'JetBrains Mono', monospace;
 }
