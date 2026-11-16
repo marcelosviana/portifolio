@@ -48,7 +48,7 @@ Este repositório contém o código-fonte do meu portfólio profissional moderni
 
 ## 🎓 Formação Acadêmica & Certificações
 
-- **Bacharelado em Engenharia de Computação** — UNIVESP (Previsão: 08/2026)
+- **Bacharelado em Engenharia de Computação** — UNIVESP (Concluído: 08/2026)
 - **Tecnólogo em Tecnologia da Informação (Ênfase em IoT)** — UNIVESP (Concluído: 07/2025)
 - **Santander Bootcamp 2024 - Backend com Java** (87h) — DIO & Santander
 - **Administração de Banco de Dados e Modelagem SQL** (38h) — Fundação Bradesco
